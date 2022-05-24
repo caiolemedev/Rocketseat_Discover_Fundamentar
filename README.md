@@ -10,7 +10,7 @@
     <p>Primeiros passos no HTML.</p>
 
 2.2 Trabalhando com elementos
-    <p>Elementos básicos do HTML</p>
+    <p>Elementos básicos do HTML.</p>
 
 2.3 Links
-    <p></p>
+    <p>Usando links e navegando entre as páginas.</p>
