@@ -1,12 +1,16 @@
 # Rocketseat_Discover_Fundamentar
  Trilha Fundamentar do Curso Discover da Rocketseat
 
+**1. Ambiente Dev**
+<p>Instalando o básico</p>
 
-**Rocketseat Discover - Trilha Fundamentar**
-***
+**2. Guia Estelar de HTML**
 
-**Ambiente Dev**
-Instalando o básico
+2.1. Conceitos
+    <p>Primeiros passos no HTML.</p>
 
-**Guia Estelar de HTML**
-Primeiros passos no HTML.
+2.2 Trabalhando com elementos
+    <p>Elementos básicos do HTML</p>
+
+2.3 Links
+    <p></p>
