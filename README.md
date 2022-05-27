@@ -10,7 +10,13 @@
     <p>Primeiros passos no HTML.</p>
 
 2.2 Trabalhando com elementos
-    <p>Elementos básicos do HTML.</p>
+    <p>Elementos básicos do HTML.   </p>
 
 2.3 Links
-    <p>Usando links e navegando entre as páginas.</p>
+    <p>Usando links e navegando entre as páginas. Primeiro exercício!</p>
+
+2.4 Tabelas
+    <p>Contruindo tabelas simples e complexas e adicionando acessibilidade.</p>
+
+2.5 Cabeçalho
+    <p>As partes do head dos sites e a função de cada uma.</p>
