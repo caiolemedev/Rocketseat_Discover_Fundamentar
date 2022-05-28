@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Estelar de CSS</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* exemplo de comentário */
+       
+        h1{
+            color: lightblue;
+            background-color: red;
+            border: 2px solid white;
+            margin: 30px;
+            padding: 10px;
+        }
+
+        #container{
+            width: calc(100%-10%);
+        }
+
+        .m-40{
+            margin: 40px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="container" class="m-40">
+        <h1>Guia Estelar de CSS</h1>
+    </div>
+    
+    <p>Aprendendo sobre CSS</p>
+    
+    <h2>Conhecendo o CSS</h2>
+    <p>CSS significa cascading style sheet e tem a função de mudar o estilo do HTML.</p>
+    
+    <h2>Comentários no CSS</h2>
+    <p>Comentários ajudam a navegar e entender o código. Não afetam o código. Começão com barra asterísco e teminam com asterísco barra</p>
+
+    <h2>Anatomia do CSS</h2>
+    <p>São utilizados os seguintes componentes: selector (faz referência a tag do HTML que terá as propriedades), declaration (é o conteúdo do seletor), properties (cada propriedade modificada via CSS) e property value (valor que cada propriedade terá para refletir no HTML).</p>
+
+    <h2>Seletores</h2>
+    <p>
+        Seletor global: * <br>
+        Seletor por elemento ou tipo: h1, h2, p, div <br>
+        Seletor por ID: #box <br>
+        Seletor por classe: .red <br>
+        Seletor por atributo, pseudo-class, pseudo-element e outros
+    </p>
+
+    <h2>Box model</h2>
+    <p>O HTML trabalha com modelo de caixas. Então é possível formatar borda, margem, padding, etc. Isso afeta as dimensões, posicionamento, espaçamento e etc.</p>
+
+    <h2>Origem do CSS</h2>
+    <p style="background-color: darkred;">Três formas de se adicionar CSS num HTML: inline, no próprio arquivo ou em um arquivo separado (folha de estilo). Neste parágrafo tem um exemplo de estilo inline.</p>
+
+    <h2>A Cascata</h2>
+    <p>Escolha do brownser de qual regra do CSS aplicar, será feita na sequência: inline > style interno > style externo. E a leitura é de cima para baixo, então caso seja alterado no mesmo nível o último será o aplicado, o mesmo se aplica para ordem de importação em caso de mais de um arquivo de estilo.</p>
+
+    <h2>Especificidade</h2>
+    <p>É um cálculo onde cada tipo de seletor e origem do estilo possuem valores a serem considerados. Necessário procurar em profundidade caso tenham tags dentro das tags.</p>
+    <p>
+        0. Universal selctor, combinators and negations pseudo-class <br>
+        1. Element type selctor and pseudo-elements <br>
+        10. Classes and atributes selectors <br>
+        100. ID selectors <br>
+        1000. Inline selectors
+    </p>
+
+    <h2>Regra Important</h2>
+    <p>Não é considerada uma boa prática e não é recomendado o uso, somente quando está usando uma biblioteca externa que impede a aplicação do estilo desejado. Basta colocar !important na propriedade que você deseja sobrescrever todas as demais tags.</p>
+
+    <h2>At rules</h2>
+    <p>Aplicadas no inicio do CSS e é identificada pelo início no arroba @. As mais comuns são: import, media (usada para um min-width específico, normalmente dispositivos móveis), font-face e keyframes (animações).</p>
+
+    <h2>Shorthand</h2>
+    <p>Junção de propriedades de forma resumida. Não considera propridades anteriores e valores não especificados serão substituídos pelo padrão. Geralmente a ordem das propriedades não importa em alguns casos, mas precisamos ter cuidado.</p>
+
+    <h2>Funções</h2>
+    <p>Nome da função seguido de parênteses que recebe argumentos. Por exemplo: rgb, calc, etc. Usado como exemplo no título.</p>
+
+    <h2>Dev Tools</h2>
+    <p>Usando a ferramenta Dev Tools no navegador para verificar os parâmetros do CSS. Possível de editar para verificar os efeitos e tentar atingir o resultado desejado.</p>
+
+    <h2>Cuidados com a escrita</h2>
+    <p>Verificar os espaços quando utilizar shorthand. Formatar o código de forma organizada usando indentação. Caso as propriedades não sejam escritas da forma correta o CSS não funcionará.</p>
+
+    <h2>Vendor prefixes</h2>
+    <p>Novidades que alguns brownsers conseguem usar. Pesquisar nos sites: which prefix vendor e caniuse.</p>
+
+</body>
+</html>

@@ -20,3 +20,8 @@
 
 2.5 Cabeçalho
     <p>As partes do head dos sites e a função de cada uma.</p>
+
+**3. Guia Estelar de CSS**
+
+Apresentação das principais features do CSS anotadas no arquivo Aula01.
+
