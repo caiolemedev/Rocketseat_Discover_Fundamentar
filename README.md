@@ -25,3 +25,7 @@
 
 Apresentação das principais features do CSS anotadas no arquivo Aula01.
 
+**4. Nem tudo são pixels**
+
+Usando valores e trabalhando com alguns conceitos de dimensões.
+

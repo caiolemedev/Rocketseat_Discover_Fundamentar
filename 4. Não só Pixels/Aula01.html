@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nem tudo são Pixels</title>
+    <style>
+        body{
+            height: 100vh;
+        }
+
+        div{
+            font-size: 18px;
+            width: 70vw;
+        }
+
+        div p{
+            font-size: 0.5em;
+            background-color: red;
+        }
+
+        #porcentagem{
+            font-size: 120%;
+            background-color: green;
+            width: 80%;
+        }
+
+        .box{
+            height: calc(20% + 20px);
+            width: calc(100% - 50px);
+            background-image: url(http://source.unsplash.com/random);
+            background-repeat: no-repeat;
+            background-position: top right;
+        }
+
+        .box::after{
+            content: "Aqui vai uma mensagem";
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Nem tudo são Pixels</h1>
+    <p>Estudar as propriedades e valores (também chamados de data types) via mdn.</p>
+    <h2>Tipos Numérios e unidades comuns</h2>
+    <p>Numeros: inteiros, decimais, dimensão ( number com unidade junto) e porcentagem. Unidades mais comuns: px, em, vw, deg, rad, turn, s, ms, dpi.</p>
+    <h2>Distancias absolutas e relativas</h2>
+    <p>Absolutas: fixas e não alteram seu valor: mais comum é o px (pixel), não é recomendado usar cm ou in. Relativas: devem fazer referência a algum valor e possuem maior adaptação aos diferentes tipos de tela. Caso o elemento pai não seja definido o navegador irá buscar no elemento root. E para referenciar ao root usar por exemplo rem no lugar de em. Podemos usar a vw (view port) como referência também.</p>
+
+    <div>
+        <p>Texto de exemplo</p>
+    </div>
+
+    <h2>Porcentagens</h2>
+    <p>Normalmente é tratado da mesma forma que o data type de distância e é sempre referente a um valor. Se colocarmos porcentagem na no seletor html ele usa como referência a informação guardada no browser.</p>
+    <div>
+        <p id="porcentagem">Texto exemplo</p>
+    </div>
+
+    <h2>Position</h2>
+    <p>Representa um conjunto de coordenadas 2D (top, right, bottom, left and center). Não confundir com a propriedade position.</p>
+    
+    <div class="box"></div>
+
+    <h2>Funções</h2>
+    <p>Funções são conhecidas por causar um reaproveitamento de código. Por exemplo: rgb(), hsl(), url(), calc().</p>
+
+    <h2>Strings e Identificadores</h2>
+    <p>Strings são textos envolto em aspas e identificadores são por exemplo red, black, etc.</p>
+
+</body>
+</html>
