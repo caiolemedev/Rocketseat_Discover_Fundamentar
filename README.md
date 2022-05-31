@@ -29,3 +29,6 @@ Apresentação das principais features do CSS anotadas no arquivo Aula01.
 
 Usando valores e trabalhando com alguns conceitos de dimensões.
 
+**5. Box Model**
+
+As principais propriedades e como usar o box model

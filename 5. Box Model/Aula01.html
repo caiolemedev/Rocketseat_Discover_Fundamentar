@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        #box{
+            width: 100px;
+            height: 100px;
+            border: 4px solid red;
+            border-top: 10px solid green;
+            margin: 10px 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        div{
+            border: 1px solid red;
+            padding: 10px 2em 8px 70%;
+        }
+        
+        span{
+            width: 10px;
+            height: 100px;
+            border: 1px solid green;
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Box Model</h1>
+
+    <h2>Introdução</h2>
+    <p>Fundamental para fazer um layout para a web e facilita a aplicação do CSS. O box model é uma caixa retangular 2D que possui as seguintes características: width, height, content, border, padding and margin.</p>
+
+    <h2>Box sizing</h2>
+    <p>Responsável pelo tamanho base do objeto. O tamanho é aplicado ao conteúdo, portanto podemos ter uma caixa maior que sua width ou height definidos. Para definirmos o tamanho pelas bordas, usamos a propriedade box-sizing conforme no exemplo.</p>
+
+    <h2>Display block e inline</h2>
+    <p>Block: o elemento ocupa toda a linha colocando o próximo elemento abaixo, width e height são respeitados, padding, margin e border irão funcionar normalmente. Inline: um elemento ao lado do outro, não respeita dimensões, padding e margin. Podem ser alterados via propriedade display, como no exemplo.</p>
+
+    <h2>Margin</h2>
+    <p>São os espaços entre os elementos e aceitam valores tipo length e percentage. Shorthand aplicado no sentido do relógio: top, rigth, bottom e left. Por padrão o chrome coloca margem de 8px no body. Margin colapse é quando as margens dos elementos se juntam para dar o espaçamento total e só acontecem na vertical (block). Margin auto centraliza o elemento horizontalmente.</p>
+
+    <h2>Padding</h2>
+    <p>Preenchimento interno da caixa, entre a borda e o conteúdo. Shorthand e propriedades similares à margin. Pode causar diferença na largura de um elemento. Não aceita valor auto.</p>
+
+    <h2>Border</h2>
+    <p>Bordas da caixa, verificar a referência do mdn para mais detalhes. Possui propriedades de estilo, largura e cor. Normalmente usada em shorthand somente como border, se quiser selecionar uma borda específica adicionar a posição. Colocar bordas diferentes precisa colocar as específicas depois. Outline: similar a borda mas não altera o tamanho da caixa, pode ser diferente de retangular e é mais usado pelo user agent para acessibilidade.</p>
+
+    <div id="box">
+        <p>CSS é incrível!</p>
+    </div>
+
+    <div>
+        <p>BLOCK</p>
+    </div>
+
+    <span>
+        INLINE
+    </span>
+</body>
+</html>
