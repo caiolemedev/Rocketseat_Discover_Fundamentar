@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+
+        body{
+            background: radial-gradient(rgba(255,255,255,0),rgba(255,0,0,0.2))
+        }
+        .box{
+            height: 500px;
+            background-color: rgb(6, 65, 9);
+            background-image: url(foto-p.png);
+            background-repeat: repeat-x;
+            background-position: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Background</h1>
+
+    <h2>Introdução</h2>
+    <p>Por padrão é transparente, é aplicado a toda a caixa e define um fundo para o elemento.</p>
+
+    <h2>Background-color</h2>
+    <p>Utilizada para definir cor base do elemento</p>
+
+    <h2>Background-image-repeat</h2>
+    <p>Define uma imagem como plano de fundo do elemento. Por padrão, irá se repetir mas podemos isso pela propriedade background-repeat.</p>
+
+    <h2>Background-position</h2>
+    <p>Aplica a posição para o vartical e horizontal, respectivamente.</p>
+
+    <h2>Background-size</h2>
+    <p>Irá definir o tamanho do fundo em relação ao elemento. Pode assumir valores como: contain, cover, porcentagens, e lenghts (largura e altura, somente 1 é só largura).</p>
+
+    <h2>Background-origin-clip</h2>
+    <p>Altera a origem da imagem: border box (começa na borda), content box (padrão) ou padding box (começa no padding). Background-clip corta o fundo e os valores são o mesmo do anterior. </p>
+
+    <h2>Background-attachment</h2>
+    <p>Permite fixar o background no centro da tela quando usamos scroll.</p>
+
+    <h2>Shorthand</h2>
+    <p>Todas as propriedades podem ser aglomeradas numa única lina de background via shorthand.</p>
+
+    <h2>Gradient</h2>
+    <p>Podemos aplicar linear-gradient ou outros tipos de gradiente ao background.</p>
+
+    <h2>Multiplos valores</h2>
+    <p>Podemos usar mais de um background, basta apenas separar por vírgula e manter todos na propriedade background.</p>
+
+    <div class="box">CAIXA</div>
+
+</body>
+</html>

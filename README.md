@@ -32,3 +32,11 @@ Usando valores e trabalhando com alguns conceitos de dimensões.
 **5. Box Model**
 
 As principais propriedades e como usar o box model
+
+**6. Cores e Background**
+
+6.1 Cores
+    <p>Conceitos básicos sobre cores e como usar cada tipo de valor.</p>
+
+6.2 Background
+    <p>Conceitos de background e como utilizar cada uma de suas propriedades e valores.</p>
