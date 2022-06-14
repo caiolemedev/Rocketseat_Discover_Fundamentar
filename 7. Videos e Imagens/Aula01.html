@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vídeos no HTML</title>
+  </head>
+  <body>
+    <h1>Vídeos no HTML</h1>
+
+    <h2>Vídeos locais</h2>
+    <p>
+      Usar várias sources pois browsers diferentes aceitam diferentes tipos de
+      video, colocar na ordem e especificar o tipo. Usar tags de controls,
+      autoplay, width, height, loop, muted e poster.
+    </p>
+    <video controls width="500" height="400" autoplay loop muted>
+      <source src="assets/exemplo1.MP4" type="video/mp4" />
+      <p>Este vídeo não suporta vídeo, baixe-o aqui.</p>
+    </video>
+
+    <h2>Vídeos do Youtube ou outras fontes</h2>
+    <p>
+      Usar outra fonte como Youtube é bom pois economiza banda do seu servidor.
+    </p>
+
+    <h2>Audios</h2>
+    <p>
+      Funcionam de forma muito similar a tag vídeo com aceitando praticamente os
+      mesmos parâmetros. Pode ser substituída por fontes externas também.
+    </p>
+
+    <h2>Usando a tag iframe</h2>
+    <p>
+      Permite colocar um conteúdo externo dentro do site, seja qual for. Alguns
+      sites não autorizam este tipo de link. O compartilhar do youtube já
+      permite compartilhamento dessa forma. A tag allow permite trazer
+      configurações da fonte original. É possível colocar mapas do google via
+      iframe também.
+    </p>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/dcFoLL8Po_o"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      title="Vídeo da Rocketseat"
+    ></iframe>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49672.62243445812!2d-51.51301643783846!3d-22.280271977774113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94938deb94d0a277%3A0xc1a0a445d489216c!2sPirapozinho%2C%20SP%2C%2019200-000!5e0!3m2!1spt-BR!2sbr!4v1655247028391!5m2!1spt-BR!2sbr"
+      width="400"
+      height="200"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </body>
+</html>

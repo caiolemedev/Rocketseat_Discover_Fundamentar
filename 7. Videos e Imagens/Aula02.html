@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imagens no HTML</title>
+  </head>
+  <body>
+    <h1>Imagens no HTML</h1>
+
+    <h2>Imagens básico</h2>
+    <p>
+      Utilizar a tag img para inserir imagens indicando o atributo src (source),
+      alt (texto alternativo caso não seja possível exibir a imagem), title
+      (título que aparecerá quando descansar o mouse sobre a imagem), width ou
+      height (optar por 1 para não deformar a imagem). Pode ser adicionada a um
+      link para servir de âncora.
+    </p>
+    <a href="https://google.com">
+      <img
+        src="https://source.unsplash.com/random"
+        alt="Imagen randômica do unsplash"
+        title="Colocar aqui um título para a imagem"
+        width="150px"
+        height="150px"
+      />
+    </a>
+
+    <h2>Praticando com imagens</h2>
+    <a href="https://rocketseat.com.br/">
+      <img
+        src="https://rocketseat.com.br/icons/icon-48x48.png"
+        alt="Logo da Rocketseat"
+        title="Link para o site da Rocketseat"
+        height="50px"
+      />
+    </a>
+
+    <h2>Background images</h2>
+    <p>Adicionando imagens via CSS com a tag style. Não recomendado.</p>
+    <p
+      style="
+        background-image: url(https://rocketseat.com.br/icons/icon-48x48.png);
+      "
+    >
+      Imagem
+    </p>
+
+    <h2>Criando títulos visíveis</h2>
+    <p>
+      Usando uma div com a tag p conforme exemplo abaixo, mas não é semântico.
+    </p>
+    <div class="figure">
+      <a href="https://rocketseat.com.br/">
+        <img
+          src="https://rocketseat.com.br/icons/icon-48x48.png"
+          alt="Logo da Rocketseat"
+          title="Link para o site da Rocketseat"
+          height="50px"
+        />
+      </a>
+
+      <p>Link para o site da Rocketseat</p>
+    </div>
+
+    <p>Essa seria a forma correta</p>
+    <a href="https://rocketseat.com.br/">
+      <figure>
+        <img
+          src="https://rocketseat.com.br/icons/icon-48x48.png"
+          alt="Logo da Rocketseat"
+          title="Link para o site da Rocketseat"
+          height="50px"
+        />
+        <figcaption>Link para o site da Rocketseat</figcaption>
+      </figure>
+    </a>
+
+    <h2>Intro sobre SVG</h2>
+    <p>
+      Foco dela é fazer imagens e trabalha com imagens vetorizadas (via
+      algoritimo) e não rasterizadas (via pixels). Vetorizada é mais leve, mais
+      detalhada, maior acessibilidade e SEO e pode ser editada via CSS. Mas é
+      mais complicada para se trabalhar e com imagens mais complexas não é boa
+      (ex: fotografias). Tendo o SVG diretamente na página reduz as chamadas
+      externas e permite edição do elemento via CSS como por exemplo colocar
+      fundo. Pode ser adicionada via tag img com arquivo externo.
+    </p>
+    <svg width="100" height="100">
+      <circle
+        cx="50"
+        cy="50"
+        r="40"
+        stroke="green"
+        stroke-width="4"
+        fill="yellow"
+      />
+    </svg>
+
+    <img src="./assets/rect.svg" alt="" />
+  </body>
+</html>

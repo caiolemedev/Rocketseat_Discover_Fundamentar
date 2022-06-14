@@ -1,25 +1,27 @@
 # Rocketseat_Discover_Fundamentar
- Trilha Fundamentar do Curso Discover da Rocketseat
+
+Trilha Fundamentar do Curso Discover da Rocketseat
 
 **1. Ambiente Dev**
+
 <p>Instalando o básico</p>
 
 **2. Guia Estelar de HTML**
 
 2.1. Conceitos
-    <p>Primeiros passos no HTML.</p>
+<p>Primeiros passos no HTML.</p>
 
 2.2 Trabalhando com elementos
-    <p>Elementos básicos do HTML.   </p>
+<p>Elementos básicos do HTML. </p>
 
 2.3 Links
-    <p>Usando links e navegando entre as páginas. Primeiro exercício!</p>
+<p>Usando links e navegando entre as páginas. Primeiro exercício!</p>
 
 2.4 Tabelas
-    <p>Contruindo tabelas simples e complexas e adicionando acessibilidade.</p>
+<p>Contruindo tabelas simples e complexas e adicionando acessibilidade.</p>
 
 2.5 Cabeçalho
-    <p>As partes do head dos sites e a função de cada uma.</p>
+<p>As partes do head dos sites e a função de cada uma.</p>
 
 **3. Guia Estelar de CSS**
 
@@ -36,7 +38,15 @@ As principais propriedades e como usar o box model
 **6. Cores e Background**
 
 6.1 Cores
-    <p>Conceitos básicos sobre cores e como usar cada tipo de valor.</p>
+<p>Conceitos básicos sobre cores e como usar cada tipo de valor.</p>
 
 6.2 Background
-    <p>Conceitos de background e como utilizar cada uma de suas propriedades e valores.</p>
+<p>Conceitos de background e como utilizar cada uma de suas propriedades e valores.</p>
+
+**7. Videos e Imagens no HTML**
+
+7.1 Videos
+<p>Usando tag video para adicionar e alterar as propriedades de um vídeo próprio ou de fonte externa.</p>
+
+7.2 Imagens
+<p>Usando a tag img e svg de diferentes maneiras para trabalhar com imagens.</p>
