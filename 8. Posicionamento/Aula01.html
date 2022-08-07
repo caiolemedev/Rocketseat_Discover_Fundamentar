@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <style>
+      div.exemplogrid {
+        margin: 0;
+        height: 100vh;
+
+        display: grid;
+        grid-template-areas:
+          'header header'
+          'main aside'
+          'footer footer';
+        grid-template-rows: 30px 1fr 40px;
+        grid-template-columns: 1fr 80px;
+      }
+
+      div.exemplogrid header {
+        grid-area: header;
+        background-color: green;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 5px;
+      }
+
+      div.exemplogrid main {
+        grid-area: main;
+        background-color: red;
+      }
+
+      div.exemplogrid aside {
+        grid-area: aside;
+        background-color: blue;
+      }
+
+      div.exemplogrid footer {
+        grid-area: footer;
+        background-color: gray;
+      }
+
+      div.exemploflex {
+        height: 50vh;
+        margin: 0;
+
+        display: flex;
+        align-items: center;
+      }
+
+      div.container {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+      }
+
+      div.box {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 8px;
+      }
+
+      div.box1 {
+        background-color: red;
+      }
+
+      div.box2 {
+        background-color: green;
+      }
+
+      div.box3 {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Posicionamento e Layout</h1>
+
+    <h2>Layout</h2>
+    <p>
+      Antes eram feitos em tabela, mas depois surgiram os conceitos de
+      frameworks e grid systems e finalmente flexbox e grid que são bem
+      melhores.
+    </p>
+
+    <h2>Position</h2>
+    <p>
+      O fluxo dos elementos é um abaixo do outro (tipo block) ou um ao lado do
+      outro (inline). É possível utilizar mais de uma classe no elemento.
+    </p>
+
+    <h2>Static</h2>
+    <p>Os elementos seguirão o fluxo normal da página.</p>
+
+    <h2>Relative</h2>
+    <p>
+      A propriedade position relative ela abre novas propriedades de
+      posicionamento. Mantem os demais elementos no fluxo normal.
+    </p>
+
+    <h2>Absolute</h2>
+    <p>
+      Também abre as novas propriedades de posição mas altera o fluxo da página
+      pois insere uma nova camada para o elemento. Caso haja um elemento pai com
+      posicionamento relativo ele fará referência a este elemento.
+    </p>
+
+    <h2>Fixed</h2>
+    <p>
+      Usando o position fixed ele se mantem fixo na página, não sendo afetado
+      pela rolagem.
+    </p>
+
+    <h2>Element Stacking</h2>
+    <p>
+      É a propriedade de z index que empilha os elementos na sequência que
+      aparecem na página, mas é possível alterar via propriedade z-index.
+    </p>
+
+    <h2>Flex</h2>
+    <p>
+      Permite posicionar os elementos dentro da caixa, normalmente utizamos um
+      elemento container e podemos alterar os posicionamentos dos elementos
+      dentro dele.
+    </p>
+
+    <h2>Grid</h2>
+    <p>
+      Posicionamento de elementos dentro da caixa também, com posicionamentos
+      horizontais e verticais ao mesmo tempo. Cria espaço para os elementos
+      filhos como uma tabela e permite configurar as linhas e colunas.
+    </p>
+
+    <h2>Grid e Flex juntos</h2>
+    <p>
+      Podemos usar o flex e o grid juntos, desde que não seja no mesmo elemento,
+      por exemplo um flex dentro do elemento header para posicionar uma logo e
+      um menu.
+    </p>
+
+    <p>Exemplo</p>
+    <div class="exemplogrid">
+      <header>
+        <p>Logo</p>
+        <p>Menu</p>
+      </header>
+      <main>Conteúdo</main>
+      <aside>Infos adicionais</aside>
+      <footer>Rodapé</footer>
+    </div>
+
+    <div class="exemploflex">
+      <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+      </div>
+    </div>
+  </body>
+</html>
