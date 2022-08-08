@@ -65,3 +65,13 @@ As principais propriedades e como usar o box model
 8.1 Posicionando foguetes
 
 <p>Posicionamentos e layouts de uma página desde display inline e block, até flex e grid.</p>
+
+**9. Fontes e Textos**
+
+9.1 Trabalhando com fontes
+
+<p>Usando fontes e alguns parâmetros básicos.</p>
+
+9.2 Mais estilos para os textos
+
+<p>Outros parâmetros para estilizar o texto e como fazer shorthand.</p>
