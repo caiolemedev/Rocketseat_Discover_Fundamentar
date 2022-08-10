@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários - Aula02</title>
+  </head>
+  <body>
+    <h1>Estutura de um formulário</h1>
+
+    <h2>Form</h2>
+    <p>
+      A tag form vai definir o formulário e possui atributos básicos de action e
+      method. O action recebe os dados, caso esteja vazio será carregado na
+      mesma página. Método será GET (menos dados) ou POST (mais dados), caso
+      esteja vazio será considerado GET. Não existe form dentro de form.
+    </p>
+
+    <h2>Fieldset legend</h2>
+    <p>
+      Fieldset é usado para agrupar elementos de um formulário e aceita
+      parâmetros como disable (não envia os dados), form (liga o fieldset ao
+      formulário), name (necessário para identificar o elemento) e legend (nome
+      do agrupamento e é o primeiro parâmetro do formulário).
+    </p>
+
+    <h2>Label</h2>
+    <p>
+      Elemento label serve para associar ou identificar uma ou mais tags de
+      entrada de dados, ajuda na acessibilidade e permite o clique para a
+      entrada de dados. Para colocar o input fora do label precisamos usar for
+      no label e o id no input (só funciona com elementos específicos).
+    </p>
+
+    <h2>Button</h2>
+    <p>
+      Usado para enviar ou resetar o formulário, vem com estilo padrão do
+      navegador mas pode ser modificado. Usar o parâmetro submit para enviar e
+      reset para limpar. Aceita o parâmetro autofocus e já é iniciado
+      selecionado. Podemos adicionar disable para manter bloqueado durante o
+      preenchimento via JS. Name e value no button servem para enviar um
+      parâmetro ao submeter o formulário. E a tag form para linkar o botão com o
+      formulário caso o botão esteja externo ao formulário.
+    </p>
+
+    <h2>Datalist</h2>
+    <p>
+      Fornece para o usuário uma lista de sugestão para um input específico, não
+      são valores obrigatórios. Só mostra valores aceitos pelo input. Verificar compatibilidade no caniuse.com.
+    </p>
+
+    <form action="">
+      <fieldset nome="contato">
+        <legend>Contato</legend>
+
+        <label for="nome">Nome:</label>
+        <input
+          type="text"
+          name="nome"
+          id="nome"
+          placeholder="alguma coisa"
+          list="nomedata"
+        />
+      </fieldset>
+
+      <datalist id="nomedata">
+        <option>Caio</option>
+        <option>Marcos</option>
+        <option>José</option>
+      </datalist>
+
+      <button type="submit">Enviar!</button>
+
+      <button type="reset">Resetar!</button>
+    </form>
+  </body>
+</html>

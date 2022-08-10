@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários - Aula03</title>
+  </head>
+  <body>
+    <h1>Tags de Entrada de Dados</h1>
+
+    <h2>Input</h2>
+    <p>
+      Mais usada em formulários e possui várias combinações pelo atributo type.
+      Mas precisa de um name e um id também. Tipos: text, file, password, etc...
+    </p>
+
+    <h2>Atributos do input</h2>
+    <p>
+      Type aceita muitos tipos. Autocomplete permite a sugestão pelo navegador.
+      Autofocus fará o cursor ficar neste campo ao iniciar a página. Disabled
+      bloqueia o preenchimento do formulário e deixa opaco. Readonly permite a
+      leitura (sem opaco) mas não permite edição. Form permite colocar um input
+      fora do formulário. Name caracteriza o input. Required campo deve ser
+      preenchido antes de submeter. Placeholder deixa um valor escrito no campo
+      (não trocar o label por esse atributo por conta de acessibilidade).
+    </p>
+
+    <h2>Password</h2>
+    <p>
+      Colocar senhas no formulário de maneira segura. Validar dados via
+      minlength, maxlength, size (tamanho do campo), pattern (usa expressões
+      regulares para validar senhas complexas), title (aparecerá caso o texto
+      não esteja conforme o estabelecido), placeholder, required, inputmode
+      (abre o teclado específico no smatphone, ex: numeric), autocomplete
+      (permite sugestão do navegador para senhas salvas).
+    </p>
+
+    <h2>Email</h2>
+    <p></p>
+
+    <form action="">
+      <input
+        type="text"
+        autocomplete="email"
+        autofocus
+        placeholder="digite um texto aqui"
+        name=""
+        id=""
+      />
+      <input
+        type="password"
+        name="senha"
+        id="senha"
+        pattern="[0-9a-fA-F]{4,8}"
+        title="Coloque HEX no mínimo 4 caracteres"
+        autocomplete="on"
+      />
+
+      <button type="submit">Enviar!</button>
+    </form>
+  </body>
+</html>

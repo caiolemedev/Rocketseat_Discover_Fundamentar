@@ -75,3 +75,21 @@ As principais propriedades e como usar o box model
 9.2 Mais estilos para os textos
 
 <p>Outros parâmetros para estilizar o texto e como fazer shorthand.</p>
+
+**10. Formulários**
+
+10.1 Introdução
+
+<p>Formulários servem para captar dados de entrada, realizar iteração e controlar alguns parâmetros da página.</p>
+
+10.2 Estrutura
+
+<p>Como funciona a estrutura do formulário e como utilizar o fieldset.</p>
+
+10.3 Tags de entrada de dados
+
+<p>Apresentando todas as tags de entrada dos formulários.</p>
+
+10.4 Criando um formulário
+
+<p>.</p>
