@@ -37,9 +37,107 @@
     </p>
 
     <h2>Email</h2>
-    <p></p>
+    <p>
+      Ele valida se o valor digitado é um e-mail, mas não se o e-mail é válido.
+      Aceita placeholder, readonly, disabled, value, required, multiple (permite
+      inserir mais de 1 e-mail separados por vírgulas), pattern (ex:
+      pattern=".+rocketseat\.com\.br" só aceita e-mail rocketseat), title, list
+      (ligado a uma datalist com e-mails sugeridos) minlength, maxlength e size.
+    </p>
 
-    <form action="">
+    <h2>URL</h2>
+    <p>
+      Espera que o usuário digite uma URL. Aceita placeholder, readonly,
+      disabled, value, required, minlength, maxlength, size, pattern (ex:
+      pattern=".*\.com\.br.*"), title, list e spellcheck (true or false, para
+      fazer verificação de ortografia).
+    </p>
+
+    <h2>File</h2>
+    <p>
+      Usuário pode escolher 1 ou mais arquivos para carregar no fomrulário.
+      Atributos value (arquivo a ser enviado), accept (tipos de arquivos
+      aceitos, ex: .doc, .pdf ou image/*, image/png), files (lista de arquivos),
+      multiple (permite envio de multipos arquivos). Quando inserido no
+      formulário precisamos colocar o atributo enctype na tag form com o valor
+      multipart/form-data.
+    </p>
+
+    <h2>Color</h2>
+    <p>
+      Interface para selecionar cor (color picker). Envia o valor em RGB. Aceita
+      value e list. Não está disponível em alguns navegadores.
+    </p>
+
+    <h2>Checkbox</h2>
+    <p>
+      Caixas de seleção no formulário. Caso nada seja selecionado não será
+      enviado nenhum valor. Recebe por padrão o valor on quando selecionado ou
+      podemos personalizar pelo atributo value. Podemos também iniciar com ela
+      selecionada pelo atributo checked. Além disso podemos colocar várias
+      entradas ao usarmos o mesmo valor para name mas com values diferentes (ex:
+      value=programação,musica).
+    </p>
+
+    <h2>Hidden</h2>
+    <p>
+      Invisível para o usuário e para leitores de tela. Usado para enviar algum
+      valor necessário como por exemplo o timestamp (horário que foi enviado).
+    </p>
+
+    <h2>Radio</h2>
+    <p>
+      Selecionar uma única opção de um grupo de valores. Atributos essenciais
+      são checked (indica se for marcado) e value.
+    </p>
+
+    <h2>Textarea</h2>
+    <p>
+      Colocar textos com mais de 1 linha, usado para comentários. Atributos: id,
+      name, rows, cols, maxleng, minlength, wrap (padrão vem como soft, mas
+      podemos desligar para pegar as quebras de linha somente do usuário com o
+      texto excedendo a caixa), e outros comuns.
+    </p>
+
+    <h2>Select</h2>
+    <p>
+      Fornece um menu de opções através das tags option. Com o atributo multiple
+      podemos selecionar várias opções com clique e arraste ou ctrl.
+    </p>
+
+    <h2>Option Group</h2>
+    <p>
+      Agrupa as opções dentro do select, não é selecionável e precisa do
+      atributo label para indicar o grupo.
+    </p>
+
+    <h2>Search</h2>
+    <p>
+      Pra campos de busca, aparência semelhante ao texto. Atributos: list (para
+      ajudar a procura), pattern (com title), aria-label (para leitores de
+      tela).
+    </p>
+
+    <h2>Number</h2>
+    <p>
+      Entrada somente de números, aceita atributos de min, max, step(permite
+      intervalo para selecionar os números) e os demais normais.
+    </p>
+
+    <h2>Range</h2>
+    <p>
+      Controle para selecionar um valor numérico do tipo slider ou dial.
+      Atributos: min, max, value (valor inicial), step (passo do seletor).
+    </p>
+
+    <h2>Data e hora</h2>
+    <p>
+      Ostros inputs interessantes que não funcionam em todos os navegadores
+      (sempre buscar no caniuse.com). Exemplos: date, datetime-local, month,
+      time e week.
+    </p>
+
+    <form action="" method="post" enctype="multipart/form-data">
       <input
         type="text"
         autocomplete="email"
@@ -48,6 +146,8 @@
         name=""
         id=""
       />
+      <br />
+
       <input
         type="password"
         name="senha"
@@ -56,6 +156,101 @@
         title="Coloque HEX no mínimo 4 caracteres"
         autocomplete="on"
       />
+      <br />
+
+      <input
+        type="file"
+        name="arquivo1"
+        id="arquivo1i"
+        accept=".doc, .docx, .js"
+      />
+      <br />
+
+      <fieldset>
+        <legend>Interesses</legend>
+
+        <label for="programação">Programação</label>
+        <input type="checkbox" name="interesses" id="programação" />
+
+        <label for="musica">Música</label>
+        <input type="checkbox" name="interesses" id="musica" />
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>Já tomou café?</legend>
+
+        <label for="yep">Yes</label>
+        <input type="radio" name="coffee" id="yep" value="yes" />
+
+        <label for="nop">NoNo</label>
+        <input type="radio" name="coffee" id="nop" value="no" checked />
+      </fieldset>
+
+      <fieldset>
+        <legend>Escreva seu comentário aqui</legend>
+
+        <label for="comentario"></label>
+        <textarea
+          name="comentario"
+          id="comentario"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Selecione</legend>
+
+        <label for="carselect"></label>
+        <select name="carmodel" id="carselect" multiple>
+          <option value="">Escolha um modelo</option>
+          <option value="fiat">Uno</option>
+          <option value="audi">A3</option>
+          <option value="bmw">X6</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Procura</legend>
+
+        <datalist id="searchterms">
+          <option value="mac">Mac</option>
+          <option value="windows">Windows</option>
+          <option value="linux">Linux</option>
+        </datalist>
+
+        <input
+          type="search"
+          name="q"
+          id="qi"
+          list="searchterms"
+          placeholder="digite seu termo de busca"
+          size="32"
+          aria-label="Campo de pesquisa: digite seu termo de busca"
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Insira um número</legend>
+
+        <label for="no">Número:</label>
+        <input type="number" name="no" id="no" step="50" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Selecione</legend>
+
+        <label for="range">Range:</label>
+        <input
+          type="range"
+          name="range"
+          id="range"
+          step="5"
+          min="-10"
+          max="10"
+        />
+      </fieldset>
 
       <button type="submit">Enviar!</button>
     </form>
