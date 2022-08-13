@@ -110,11 +110,11 @@ As principais propriedades e como usar o box model
 
 10.4 Variaveis
 
-<p>.</p>
+<p>Declaração de variáveis e escopo.</p>
 
 10.5 Praticando e avançando
 
-<p>.</p>
+<p>Usando ainda mais as veriáveis e manipulando arrays e objetos.</p>
 
 10.6 Funções
 

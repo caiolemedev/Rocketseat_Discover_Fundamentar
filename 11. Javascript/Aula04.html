@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS - Aula04</title>
+    <script src="./script_04.js"></script>
+  </head>
+  <body>
+    <h1>Variáveis</h1>
+
+    <h2>Conhecendo as veriáveis</h2>
+    <p>
+      São nomes simbólicos utilizados para receber algum valor. Podemos criar de
+      3 modos diferentes: var, let e const (esse ultimo não permite a alteração
+      de valor).
+    </p>
+
+    <h2>Tipos dinâmicos</h2>
+    <p>
+      JS é uma linguagem fracamente tipada e dinâmica. Variáveis não precisam
+      ter um tipo previamente definido e os tipos podem ser mudados (dinâmica).
+    </p>
+
+    <h2>Scope e var</h2>
+    <p>
+      O escopo determina a visibilidade de uma variável no JS. Precisamos criar
+      um block statement que também cria um novo escopo block-scoped. O var é
+      global e pode funcionar fora do escopo de um bloco, o JS cria a var antes
+      de qualquer coisa (hoisting). Atualmente evitamos usar var por conta desse
+      fator.
+    </p>
+
+    <h2>Scope let e const</h2>
+    <p>
+      Let e const existem somente no bloco em que foram criadas, não sendo
+      levadas para o escopo global. Caso o código esteja antes ele sabe que
+      existe mas não pode utiliza-lo. Podemos atualizar o valor da variável let
+      em escopos abaixo (não importa quantos) e ela passará a ter o novo valor
+      para os demais escopos também. Podem existir 2 const com mesmo nome em
+      escopos diferentes com valores diferentes.
+    </p>
+
+    <h2>Nomeando variáveis</h2>
+    <p>
+      O JS é case-sensitive e aceita cadeia de caracteres Unicode (caracteres
+      especiais e acentos). Posso: iniciar com caracteres especiais, letras,
+      colocar acentos, diferenciar com letras maiúsculas e minúsculas. Não
+      posso: iniciar com números e colocar espaço vazio no nome. Ideal: Criar
+      nomes com sentido, usar camelCase ou snake_case e preferencialmente
+      utilizar o inglês.
+    </p>
+  </body>
+</html>
