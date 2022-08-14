@@ -96,46 +96,46 @@ As principais propriedades e como usar o box model
 
 **11. Javascropt**
 
-10.1 Introdução
+11.1 Introdução
 
 <p>Apresentando a linguagem.</p>
 
-10.2 Primeiros passos
+11.2 Primeiros passos
 
 <p>Sintaxe e maneiras de executar o JS.</p>
 
-10.3 Tipos de dados
+11.3 Tipos de dados
 
 <p>Apresentando os tipos de dados mais utilizados.</p>
 
-10.4 Variaveis
+11.4 Variaveis
 
 <p>Declaração de variáveis e escopo.</p>
 
-10.5 Praticando e avançando
+11.5 Praticando e avançando
 
 <p>Usando ainda mais as veriáveis e manipulando arrays e objetos.</p>
 
-10.6 Funções
+11.6 Funções
+
+<p>Conceito e os tipos de funções, como utilizá-las de forma básica.</p>
+
+11.7 Manipulando dados
 
 <p>.</p>
 
-10.7 Manipulando dados
+11.8 Expressões e Operadores
 
 <p>.</p>
 
-10.8 Expressões e Operadores
+11.9 Condicionais e controle de fluxo
 
 <p>.</p>
 
-10.9 Condicionais e controle de fluxo
+11.10 Estruturas de repetição
 
 <p>.</p>
 
-10.10 Estruturas de repetição
-
-<p>.</p>
-
-10.11 Consolidando com exercícios
+11.11 Consolidando com exercícios
 
 <p>.</p>

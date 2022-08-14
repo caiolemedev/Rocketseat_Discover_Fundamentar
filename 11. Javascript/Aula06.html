@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS - Aula06</title>
+    <script src="./script_06.js"></script>
+  </head>
+  <body>
+    <h1>Funções</h1>
+
+    <h2>Functions</h2>
+    <p>
+      Para começarmos uma função precisamos primeiramente declarar a mesma
+      (function statement or declaration), cada função inicia um novo escopo. A
+      função é guardada em memória, precisa ser executada/chamada/rodada (run,
+      execute, call) posteriormente. Caso a função seja chamada sem ter sido
+      criada o sistema apresentará um erro de referência.
+    </p>
+
+    <h2>Argumentos e parâmetros</h2>
+    <p>
+      A função pode ser salva dentro de uma variável sem um nome próprio
+      (anônima), chamada function expression ou anonymous. É executada chamando
+      a variável como nome da função. Podemos enviar parâmetros para a função,
+      não é necessário declarar os argumentos que a função receberá pois isso é
+      feito na chamada da função.
+    </p>
+
+    <h2>Retornando valores dentro da função</h2>
+    <p>
+      Podemos retornar o valor de uma função através do comando return e
+      atribuindo isso a uma variável. Caso não seja colocado um delcarador antes
+      da variável interna da função ela existirá fora da função (não devemos
+      fazer isso para não causar confusão!!).
+    </p>
+
+    <h2>Outra maneira de entender funções</h2>
+    <p>Explicando funções como se fosse um liquidificador.</p>
+
+    <h2>Function Scope</h2>
+    <p>
+      Caso a função altere uma variável interna com o mesmo nome de uma externa,
+      a mesma não será modificada caso seja passada como argumento, mas caso a
+      função não tenha argumento a variável será alterada para todo o resto do
+      código após a função ser executada.
+    </p>
+
+    <h2>Funtion Hoisting</h2>
+    <p>
+      Quando feita anônima com uma variável ela não sofre elevação, mas se feita
+      da maneira tradicional sim e pode ser executada normalmente.
+    </p>
+
+    <h2>Arrow function</h2>
+    <p>
+      Jeito mais moderno de esrever funções via variáveis, usamos o formato de
+      arrow (seta) para atribuir a função a uma constante.
+    </p>
+
+    <h2>Callback function</h2>
+    <p>
+      Funções que chamam outras funções externas que são recebidas através dos
+      argumentos se tornando parâmetros para serem rodados dentro dela.
+    </p>
+
+    <h2>Funções construtoras</h2>
+    <p>
+      Usando a expressão new antes da atribuição de uma função a uma variável
+      ela se torna uma construtora e cria um objeto dentro da variável. Com isso
+      usando a palavra this dentro da função podemos acessar o objeto criado e
+      adicionar propriedades, assim podemos criar diversos objetos com os mesmos
+      padrões de propriedade. É recomendado usarmos a primeira letra maiúscula
+      pois já existem funções construtoras padrões assim no JS (String, Number,
+      Date).
+    </p>
+  </body>
+</html>
