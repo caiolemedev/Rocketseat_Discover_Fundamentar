@@ -122,20 +122,20 @@ As principais propriedades e como usar o box model
 
 11.7 Manipulando dados
 
-<p>.</p>
+<p>Manipulando dados via propriedades e métodos dentro do proto.</p>
 
 11.8 Expressões e Operadores
 
-<p>.</p>
+<p>Aprendendo sobre operadores e expressão do JS.</p>
 
 11.9 Condicionais e controle de fluxo
 
-<p>.</p>
+<p>Controlando o fluxo da aplicação via if, else e switch. Como capturar erros sem quebrar a aplicação.</p>
 
 11.10 Estruturas de repetição
 
-<p>.</p>
+<p>Como usar loopings e for of e for in.</p>
 
 11.11 Consolidando com exercícios
 
-<p>.</p>
+<p>Treinando os conceitos do JS com exercícios.</p>

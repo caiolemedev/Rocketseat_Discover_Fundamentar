@@ -1,14 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JS - Aula07</title>
-</head>
-<body>
-  <h1>Manipulando dados</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS - Aula07</title>
+    <script src="./script_07.js"></script>
+  </head>
+  <body>
+    <h1>Manipulando dados</h1>
 
-  <h2></h2>
-</body>
+    <h2>Prototype</h2>
+    <p>
+      Significa algo que foi criado antes, são algumas funcionalidades que já
+      existem e ficam nessa cadeia de protótipo. Todo objeto criado referencia
+      um objeto protótipo criado antes (padrão), ascendente. Podemos ter uma
+      cadeia de protótipos (prototype chain) com diversos objetos agregando
+      funcionalidades dos objetos anteriores. Para números precisamos tomar
+      cuidado com o ponto para acessar as propriedades de proto.
+    </p>
+
+    <h2>Type conversion coersion</h2>
+    <p>
+      Type conversion (typecasting) explicitamente altera um tipo de dado para
+      outro. Type coersion implicitamente o JS altera o tipo de dado. Alteram o
+      tipo de dado, por exemplo string para number.
+    </p>
+
+    <h2>Strings e números</h2>
+    <p>
+      Transformando strings em números e vice versa. Usamos os comandos number()
+      e string().
+    </p>
+
+    <h2>Contando caracteres e dígitos</h2>
+    <p>
+      Numeros não tem a propriedade length, para contar o número de dígitos
+      precisamos primeiro converte-lo em string e depois acessar a propriedade.
+    </p>
+
+    <h2>Casas decimais</h2>
+    <p>
+      Podemos tirar as casas decimais via propriedade toFixed() mas isso
+      transforma o número numa string, podemos converter de volta via Number().
+      No entanto se trocarmos o ponto pela vírgula e tentarmos converter
+      novamente para número o JS não conseguirá e resultará em um NaN.
+    </p>
+
+    <h2>Maiúsculas e minúsculas</h2>
+    <p>
+      Podemos transformar toda a frase em maiúsculas ou minúsculas via comandos
+      toUpperCase() e toLowerCase() respectivamente.
+    </p>
+
+    <h2>Encontrando palavras em frases</h2>
+    <p>
+      Usando a propriedade includes e passando o argumento que desejamos
+      procurar o próprio JS resultará uma boolean indicando se existe ou não. É
+      uma propriedade case sensitive, é recomendável converter o texto para
+      todas maiúsculas ou minúsculas antes.
+    </p>
+
+    <h2>Separando strings</h2>
+    <p>
+      Transformar um texto em um array e depois de volta em texto mas com _ no
+      lugar dos espaços. Usar a propriedade split para a primeira parte e o
+      método join com o conector que você desejar.
+    </p>
+
+    <h2>Criando array com construtor</h2>
+    <p>
+      Usar o contrutor new Array com a quantidade de espaços desejada ou já
+      inserir os valores também funciona.
+    </p>
+
+    <h2>Elementos do Array</h2>
+    <p>
+      Contar elementos do Array via length. Podemos também acessar os elementos
+      do array e caso sejam objetos ou funções podemos acessar suas propriedades
+      ou as executar.
+    </p>
+
+    <h2>Strings para arrays</h2>
+    <p>
+      Usando o método Array.from() para transformar uma cadeia de caracteres em
+      elementos de um array, cada caracter ocupará um espaço.
+    </p>
+
+    <h2>Manipulando arrays</h2>
+    <p>
+      Adicionando e removendo itens no array via diferentes métodos em
+      diferentes posições via push, unshift, pop, shift. Além de identificar a
+      posição de um elemento do array e permitir "cortar" o array e remover
+      elementos do meio do mesmo.
+    </p>
+  </body>
 </html>
