@@ -139,3 +139,9 @@ As principais propriedades e como usar o box model
 11.11 Consolidando com exercícios
 
 <p>Treinando os conceitos do JS com exercícios.</p>
+
+**12. Semantic**
+
+11.1 HTML que faz sentido pra todos
+
+<p>Apresentando a semântica das tags do HTML.</p>
