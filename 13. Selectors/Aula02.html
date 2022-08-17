@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula02</title>
+
+    <style>
+      ul li:first-child {
+        font-weight: bold;
+      }
+
+      ul li:nth-child(odd) {
+        color: darkblue;
+      }
+
+      ul li:hover {
+        color: red;
+      }
+
+      article p:nth-of-type(2) {
+        font-weight: bold;
+      }
+
+      article p:nth-child(2) {
+        color: red;
+      }
+
+      input:focus {
+        border-color: red;
+        outline: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo-classes</h1>
+
+    <h2>Pseudo-classes</h2>
+    <p>Tipo de seletor para um elemento em um estado específico.</p>
+
+    <h2>first-child</h2>
+    <p>
+      Primeiro filho de um grupo de elementos, caso o primeiro filho não seja do
+      tipo especificado o seletor não funciona.
+    </p>
+
+    <h2>nth-of-type</h2>
+    <p>Seleciona o número por tipo, no caso conta a partir do primeiro p.</p>
+
+    <h2>nth-child</h2>
+    <p>Seleciona o filho do principal, no exemplo h3 é o filho 1.</p>
+
+    <h2>nth-child odd e even</h2>
+    <p>Seleciona todos os filhos pares (even) ou ímpares (odd).</p>
+
+    <h2>hover e focus</h2>
+    <p>
+      hover - quando o mouse estiver em cima do item. focus - usado para campos
+      de input que estão com o foco (pronto para preenchimento).
+    </p>
+    <input type="text" name="" id="" />
+
+    <h2>disabled e required</h2>
+    <p>
+      configurações para campos de input quando estão com status required ou
+      disabled.
+    </p>
+
+    <h2>Como conseguir ajuda</h2>
+    <p>
+      Acessar o site:
+      https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+    </p>
+
+    <ul>
+      <li>Caio</li>
+      <li>Marco</li>
+      <li>Guilherme</li>
+      <li>Flavio</li>
+    </ul>
+    <article>
+      <h3>Título</h3>
+      <p>Paragrafo 1</p>
+      <p>Paragrafo 2</p>
+      <p>Paragrafo 3</p>
+    </article>
+  </body>
+</html>

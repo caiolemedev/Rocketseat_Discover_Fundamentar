@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula01</title>
+
+    <style>
+      h1 {
+        color: blue;
+      }
+
+      #content {
+        color: darkblue;
+      }
+
+      .p {
+        color: red;
+      }
+
+      [title] {
+        color: orangered;
+      }
+
+      p:hover {
+        color: darkcyan;
+      }
+
+      body span {
+        color: blue;
+      }
+
+      div > p {
+        color: orangered;
+      }
+
+      button + button {
+        margin-left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Selectors and Combinators</h1>
+
+    <h2 title="algum titulo">Introdução</h2>
+    <p class="p">
+      Veremos como funcionam os seletores, combinadores, pseudo-classes e
+      pseudo-elements
+    </p>
+
+    <h2 id="content">Seletores</h2>
+    <p class="p">
+      Conecta um elemento HTML ao CSS para podermos alterar o elemento. Podemos
+      usar o id como seletor, mas devemos ter um id único para cada página, usa
+      o # antes do nome no css. Para classe podemos ter mais de um elemento com
+      a mesma classe na página, o css irá alterar todos os elementos da classe,
+      usamos . antes do nome no css. Seletor por atributo funciona similar a
+      classe mas colocamos o nome no css entre chaves. Pedemos usar
+      pseudo-classes que terão um estado específico. Podemos agrupar formatações
+      do css via seleção de múltiplos elementos separados por vírgula.
+    </p>
+
+    <h2>Combinators</h2>
+    <p>
+      Buscam e combinam seletores para aplicar uma <span>estilização</span>.
+      Mesmo que haja elementos no meio do caminho todos os elementos dentro do
+      pai sofrerão as alterações.
+    </p>
+
+    <h2>Child combinator</h2>
+    <div>
+      <p>
+        Ele seleciona somente elementos que são filhos diretos do pai quando
+        usamos o sinal de maior >.
+      </p>
+    </div>
+
+    <h2>Adjacent sibling combinator</h2>
+    <p>
+      Identificado pelo sinal de mais + entre dois seletores. Seleciona somente
+      o elemento do lado direito que é irmão direto na hierarquia. Normalmente
+      usado para colocar espaço entre os botões.
+      <button>Botao1</button> <button>Botao2</button>
+    </p>
+
+    <h2>General sibling combinator</h2>
+    <p>
+      Identificado pelo ~ entre os elementos e considera todas as tags irmãs
+      dentro e não só o primeiro como no anterior.
+    </p>
+
+    <h2>Utilizando combinators</h2>
+    <p>
+      Alguns exemplos de combinators. Dica: seletores muito específicos tendem a
+      causa problema na reutilização das regras. Simplificamos com classe por
+      exemplo.
+    </p>
+  </body>
+</html>

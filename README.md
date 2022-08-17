@@ -142,6 +142,20 @@ As principais propriedades e como usar o box model
 
 **12. Semantic**
 
-11.1 HTML que faz sentido pra todos
+12.1 HTML que faz sentido pra todos
 
 <p>Apresentando a semântica das tags do HTML.</p>
+
+**13. Selectors CSS**
+
+13.1 Selectors and Combinators
+
+<p>Conceitos e como usar seletores e combinadores.</p>
+
+13.2 Pseudo-classes
+
+<p>Criando pseudo-classes e como usar.</p>
+
+13.3 Pseudo-elements
+
+<p>Os pseudo-elements e seu uso.</p>
