@@ -159,3 +159,29 @@ As principais propriedades e como usar o box model
 13.3 Pseudo-elements
 
 <p>Os pseudo-elements e seu uso.</p>
+
+**14. Flexbox**
+
+14.1 Introdução
+
+<p>Abertura sobre flexbox.</p>
+
+14.2 Layout CSS
+
+<p>Modelos de layout no CSS.</p>
+
+14.3 Terminologia
+
+<p>O que significa cada termo das propriedades de flex.</p>
+
+14.4 Propriedades do Flex Container
+
+<p>Conhecendo as propriedades do flex container, a caixa que engloba os elementos.</p>
+
+14.5 Propriedades dos itens
+
+<p>Apresentando as propriedades dos elementos de dentro do container.</p>
+
+14.6 Desafios
+
+<p>Alguns desafios e exercícios para fixação.</p>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula05</title>
+
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+        border: 1px dashed red;
+      }
+
+      .item {
+        border: 1px solid;
+        flex-basis: 120px;
+      }
+
+      .container .item:nth-child(1) {
+        width: 50px;
+        flex-grow: 2;
+      }
+
+      .container .item:nth-child(2) {
+        flex-grow: 1;
+      }
+
+      .container .item:nth-child(3) {
+        flex-shrink: 6;
+      }
+
+      .page {
+        border: 2px solid;
+        min-height: 80vh;
+
+        display: flex;
+      }
+
+      aside {
+        background: lightgreen;
+        flex: 1;
+      }
+
+      main {
+        background: lightblue;
+        flex: 2;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      main section:nth-child(1) {
+        background: lightgoldenrodyellow;
+
+        flex: 0 0 50px;
+      }
+
+      main section:nth-child(2) {
+        background: lightsalmon;
+
+        flex: 0 300px;
+      }
+
+      main section:nth-child(3) {
+        background: lightpink;
+
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Propriedade dos itens</h1>
+
+    <h2>Propriedade dos itens</h2>
+    <p>Principais propriedades para o itens do flex.</p>
+
+    <h2>Largura e altura para os itens com flex basis</h2>
+    <p>
+      O flex-basis altera largura e altura do elemento, usamos os mesmos inputs
+      do width e height. Bloqueia o uso de dimensões específicas para os
+      elementos internos. Usa a direção do eixo principal, ou seja, poderá ser
+      altura ou largura dependendo da direção.
+    </p>
+
+    <h2>Crescimento e adaptação do item dentro do container</h2>
+    <p>
+      Crescimento do item dentro dos espaços vazios dentro do container. Podemos
+      fracionar o espaço restante do container e distribuir da maneira que
+      desejarmos entre os elementos.
+    </p>
+
+    <h2>Encolhimento e encaixe dos elementos</h2>
+    <p>
+      Usamos a propriedade flex-shrink para encolher os itens dentro do
+      container. É usado somente quando há necessiade de encolher os itens, caso
+      a distribuição tamanho dos itens e container esteja ok, não haverá
+      encolhimento.
+    </p>
+
+    <h2>Shorthand flex</h2>
+    <p>
+      Podemos usar um shorthand flex para unir o flex-grow, flex-shrink e/ou
+      flex-basis.
+    </p>
+
+    <h2>Alterando o tamanho de diversos elementos</h2>
+    <p>
+      Aditando o exemplo da div page. O basis é mais forte que as adaptações até
+      o limite do tamanho do container.
+    </p>
+
+    <h2>Ordenando itens</h2>
+    <p>
+      Todos os elementos iniciam com order 0, mas podemos aumentar ou diminir
+      (aceita negativos). Funciona somente de maneira visual e não estrutural,
+      não altera o HTML gerando problemas de acessibilidade.
+    </p>
+
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+
+    <br />
+
+    <div class="page">
+      <aside>Aside</aside>
+      <main>
+        Main
+        <section>Content 1</section>
+        <section>Content 2</section>
+        <section>Content 3</section>
+      </main>
+    </div>
+  </body>
+</html>

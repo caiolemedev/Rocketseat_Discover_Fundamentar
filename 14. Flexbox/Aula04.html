@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula04</title>
+
+    <style>
+      .container {
+        display: flex;
+        flex-flow: row-reverse wrap;
+        justify-content: space-evenly;
+        border: 1px dashed red;
+        height: 50vh;
+        align-items: center;
+      }
+
+      .item {
+        border: 1px solid;
+        height: 80px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Propriedades do Flex Container</h1>
+
+    <h2>Propriedades do Flex Container</h2>
+    <p>
+      A caixa que receberá o display flex vai habilitar diversas propriedades.
+    </p>
+
+    <h2>Direão dos itens</h2>
+    <p>
+      O flex funciona em função de 1 eixo, ou horizontal ou vertical. Podemos
+      mudar a direção pelo flex-riection, alterando também a direção.
+    </p>
+
+    <h2>Multiplas linhas</h2>
+    <p>
+      Usamos o flex-wrap para editar uma nova linha que será um novo flex
+      container.
+    </p>
+
+    <h2>Direção e multi linha em uma única propriedade</h2>
+    <p>
+      O flex flow junta as propriedades flex direction e flex wrap, funcionando
+      como um shorthand.
+    </p>
+
+    <h2>Alinhamento dos itens no eixo principal</h2>
+    <p>
+      Alinhamento dos elementos via justify-content, aceita os valores:
+      flex-start, flex-end, center, space-around, space-between e space-evenly.
+    </p>
+
+    <h2>Alinhamento dos itens no eixo cruzado</h2>
+    <p>
+      Usamos a propriedade align-items e ela aceita os valores: stretch,
+      flex-start, flex-end e center.
+    </p>
+
+    <h2>Espaço entre os elementos</h2>
+    <p>
+      Usamos a propriedade gap e usamos valores de unidade de medida. Espaço
+      colocado somente entre os elementos.
+    </p>
+
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula02</title>
+
+  <style>
+    .flexbox{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+
+    .item:nth-child(1){
+      order: 1;
+    }
+  </style>
+</head>
+<body>
+  <h1>Layout CSS</h1>
+
+  <h2>Layouts e evolução</h2>
+  <p>
+    Maneira como os elementos são distribuídos na tela
+  </p>
+
+  <h2>Normal flow</h2>
+  <p>
+    Maneira como os elementos block e inline ficam na página. Block existe quebra de linha e ocupa toda a largura da tela e inline não quebra linha.
+  </p>
+
+  <h2>Table</h2>
+  <p>
+    É a maneira que a tag table mostra os elementos e monta uma tabela na página. Adicionamos linhas tr e colunas td.
+  </p>
+
+  <h2>Tableess</h2>
+  <p>
+    Uso de float e clear para alterar a posição dos elementos na tela.
+    <div style="float:left">esquerda</div>
+    <div style="float:right">direita</div>
+    <div style="clear:both">normal flow</div>
+  </p>
+
+  <h2>Flexbox</h2>
+  <p>
+    Caixa que se torna flexível e permite que os elementos internos tenham melhor alinhamento, ordenação e tamanhos flexíveis.
+  </p>
+  <div class="flexbox">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+  </div>
+</body>
+</html>

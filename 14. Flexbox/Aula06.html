@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula06</title>
+
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        background: lightblue;
+        align-items: center;
+        height: 10vh;
+        padding: 1rem;
+      }
+
+      nav > ul {
+        display: flex;
+        gap: 0.8rem;
+        align-items: center;
+      }
+
+      nav > ul > li {
+        list-style: none;
+      }
+
+      ul > li:last-child {
+        background: black;
+        color: white;
+        padding: 0.8rem;
+      }
+
+      .container {
+        display: flex;
+        gap: 1rem;
+        border: 1px dashed red;
+        height: 50px;
+      }
+
+      .container div {
+        border: 1px solid;
+      }
+
+      .container div:nth-child(1) {
+        flex: 0 25%;
+      }
+
+      .container div:nth-child(2) {
+        flex: 1;
+      }
+
+      .galeria {
+        display: flex;
+        border: 1px dashed red;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+        padding: 0.8rem;
+        justify-content: center;
+        height: 50vh;
+      }
+
+      .galeria div {
+        border: 1px solid;
+        background: lightcoral;
+        flex-basis: 25%;
+        height: 25%;
+      }
+
+      .button {
+        display: flex;
+        gap: 0.4rem;
+        align-items: center;
+        flex-direction: row-reverse;
+        padding: 0.4rem;
+        background-color: darkred;
+        border: 2px solid black;
+        border-radius: 5px;
+        color: white;
+        line-height: 0;
+      }
+
+      .button img {
+        height: 30px;
+      }
+
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: lightblue;
+        height: 8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Desafios</h1>
+
+    <h2>Header menu navigation</h2>
+    <header>
+      <nav>
+        <div>LOGO</div>
+        <ul>
+          <li>HOME</li>
+          <li>ABOUT</li>
+          <li>SERVICES</li>
+          <li>COMMENTS</li>
+          <li>CONTACT</li>
+        </ul>
+      </nav>
+    </header>
+
+    <h2>Layout com duas colunas</h2>
+    <div class="container">
+      <div>Coluna 1</div>
+      <div>Coluna 2</div>
+    </div>
+
+    <h2>Galeria com 9 fotos e 3 colunas</h2>
+    <div class="galeria">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <h2>Botão com imagem dentro</h2>
+    <button class="button">
+      Button <img src="../6. Cores e Background/foto-p.png" alt="Foto" />
+    </button>
+
+    <h2>Criando um footer</h2>
+    <footer>
+      <p>Site criado em 20/08/2022</p>
+    </footer>
+  </body>
+</html>
