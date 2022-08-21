@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula02</title>
+  </head>
+  <body>
+    <h1>Selecionando elementos</h1>
+
+    <h2 id="titulo">getElementById</h2>
+    <p>Exemplo usando o script.</p>
+
+    <h2 class="one">getElementByClassName</h2>
+    <p class="one">Exemplo usando o script. Traz um HTML collection.</p>
+
+    <h2>getElementsByTagName</h2>
+    <p>Exemplo usando o script. Traz um HTML collection.</p>
+
+    <h2>querySelector</h2>
+    <p>
+      Exemplo usando o script. Pega o primeiro daquele seletor que ele achar.
+    </p>
+
+    <h2>querySelectorAll</h2>
+    <p>
+      Exemplo usando o script. Traz todos os nós que contem aquele seletor,
+      formato Nodelist. Esse é melhor q o HTML collection pois aceita o forEach.
+    </p>
+
+    <h2>Qual usar?</h2>
+    <p>
+      querySelectorAll (Nodelist) e getElementByClassName (HTMLCollection) o
+      primeiro é melhor por usar o forEach. Já o querySelector e o
+      getElementById traz somente o elemento e não possuem tanta diferença.
+    </p>
+
+    <script src="./script02.js"></script>
+  </body>
+</html>

@@ -185,3 +185,37 @@ As principais propriedades e como usar o box model
 14.6 Desafios
 
 <p>Alguns desafios e exercícios para fixação.</p>
+
+**15. DOM**
+
+15.1 Introdução
+
+<p>Apresentação e conceito da DOM.</p>
+
+15.2 Selecionando elementos
+
+<p>Conhecendo os seletores dos elementos HTML.</p>
+
+15.3 Manipulando conteúdos
+
+<p>.</p>
+
+15.4 Manipulando estilos e classes
+
+<p>.</p>
+
+15.5 Navegando pelos elementos
+
+<p>.</p>
+
+15.6 Criando e adicionando elementos na página
+
+<p>.</p>
+
+15.7 Eventos
+
+<p>.</p>
+
+15.8 Praticando
+
+<p>.</p>
