@@ -198,15 +198,15 @@ As principais propriedades e como usar o box model
 
 15.3 Manipulando conteúdos
 
-<p>.</p>
+<p>Como maniular os conteúdos de texto e HTML com script.</p>
 
 15.4 Manipulando estilos e classes
 
-<p>.</p>
+<p>Adicionando e removendo estilos e classes dos elementos via script.</p>
 
 15.5 Navegando pelos elementos
 
-<p>.</p>
+<p>Selectionando outros elementos através do elemento inicial.</p>
 
 15.6 Criando e adicionando elementos na página
 
