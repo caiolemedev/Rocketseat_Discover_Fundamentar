@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula07</title>
+  </head>
+  <body>
+    <h1>Eventos</h1>
+
+    <h2>Adicionando eventos via HTML</h2>
+    <p ondblclick="print()">
+      Usando a interação do usuário para disparar eventos. Por exemplo: onclick,
+      ondbclick e mouseover.
+    </p>
+
+    <h2>Eventos de teclado</h2>
+    <p>Adicionando eventos de teclado usando input.</p>
+    <input type="text" />
+
+    <h2>Adicionando eventos via JS</h2>
+    <p>
+      Usando o próprio JS para disparar um evento via propriedade
+      addEventListener e informando o evento e a função a ser executada.
+    </p>
+
+    <h2>Adicionando eventos via JS (Outros método)</h2>
+    <p>
+      Podemos adicionar diretamente uma função na propriedade onclick do
+      elemento, mas só podemos fazer 1x. Caso tenha mais de 1 no código somente
+      o último irá funcionar, exemplo no script.
+    </p>
+
+    <h2>Argumento event</h2>
+    <p>
+      Podemos capturar o tipo de evento, qual a tecla digitada (no caso do
+      teclado), qual o target (quem dispara o evento). Podemos capturar o valor
+      do input via propriedades do event.
+    </p>
+
+    <script src="./script07.js"></script>
+  </body>
+</html>

@@ -210,12 +210,12 @@ As principais propriedades e como usar o box model
 
 15.6 Criando e adicionando elementos na página
 
-<p>.</p>
+<p>Adicionando elementos na página via JS.</p>
 
 15.7 Eventos
 
-<p>.</p>
+<p>Usando a interatividade do usuário para realizar eventos na página.</p>
 
 15.8 Praticando
 
-<p>.</p>
+<p>Criando um exercício usando eventos.</p>
