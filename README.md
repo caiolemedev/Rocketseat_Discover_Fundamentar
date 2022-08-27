@@ -219,3 +219,17 @@ As principais propriedades e como usar o box model
 15.8 Praticando
 
 <p>Criando um exercício usando eventos.</p>
+
+**16. Terminal**
+
+15.1 Abertura
+
+<p>.</p>
+
+15.2 Preparação e Dicas
+
+<p>.</p>
+
+15.3 Arquivos e Diretórios
+
+<p>.</p>
