@@ -224,12 +224,12 @@ As principais propriedades e como usar o box model
 
 15.1 Abertura
 
-<p>.</p>
+<p>Explicando o terminar e o command line.</p>
 
 15.2 Preparação e Dicas
 
-<p>.</p>
+<p>Preparando o terminal para as próximas aulas.</p>
 
 15.3 Arquivos e Diretórios
 
-<p>.</p>
+<p>Alguns comandos básicos do terminal.</p>

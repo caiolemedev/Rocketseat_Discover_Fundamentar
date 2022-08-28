@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula03</title>
+  </head>
+  <body>
+    <h1>Arquivos e Diretórios</h1>
+
+    <h2>Informando o diretório atual</h2>
+    <p>
+      Usando o comando pwd o terminal mostra o diretório atual que estamos
+      trabalhando.
+    </p>
+
+    <h2>Navegando pelas pastas</h2>
+    <p>
+      Usamos o comando cd (change directory) seguidos do nome da pasta que
+      queremos entrar ou do caminho completo. Para subirmos um diretório usamos
+      cd seguido de dois pontos finais (exemplo: cd ../../../). Para voltar ao
+      diretório anterior usamos o cd seguido de traço (ex: cd -). No caso de
+      diretórios com espaços é recomendado usar o tap para o autocomplete
+      configurar corretamente ou usar aspas duplas.
+    </p>
+
+    <h2>Listando arquivos e pastas</h2>
+    <p>
+      Usamos o comando ls para listar os arquivos e pastas do diretório atual.
+      Podemos colocar alguns argumentos para termos mais informações: -l (mais
+      detalhes dos arquivos), -a (all inclusive arquivos ocultos), -h (mostra a
+      maneira humana de entender os arquivos), -R (mostra a arvore de arquivos
+      em um formato simples), -S(ordena os arquivos e pastas por tamanho).
+    </p>
+
+    <h2>Obtendo informações dos arquivos</h2>
+    <p>
+      Podemos usar o file (tipo de arquivo e informações adicionais) ou stat
+      (dono e modificações) para obter algumas infos sobre os arquivos.
+      Precisamos colocar o comando e o nome do arquivo com extensão.
+    </p>
+
+    <h2>Criando diretórios com mkdir</h2>
+    <p>
+      O comando mkdir (make directory) seguido de um nome gera uma pasta no
+      sistema para trabalharmos. Podemos criar toda a árvore pais colocando todo
+      o caminho e o parâmetro -p antes. Podemos criar multiplos diretórios
+      colocando todos na mesma linha separados por espaço.
+    </p>
+
+    <h2>Criando arquivos com o touch</h2>
+    <p>
+      Podemos alterar a data e hora da ultima modificação de pastas e arquivos
+      usando o comando touch, ele aceita mais de 1 input separados por espaço.
+      Podemos também criar arquivos colocando o nome e extensão. Podemos criar
+      arquivos padrões todos de uma vez quando estamos criando nossos projetos.
+    </p>
+
+    <h2>Copiando arquivos e pastas</h2>
+    <p>
+      Usamos o comando cp (copy) para copiar pastas e arquivos através do
+      terminal. O primeiro argumento é o arquivo a ser copiado e o segundo é o
+      diretório a ser copiado. Podemos fazer com mais de um arquivo de uma vez.
+      Para copiarmos diretórios precisamos colocar o comando -r (recursivo)
+      antes dos inputs quando estamos manipulando diretórios.
+    </p>
+
+    <h2>Movendo e renomeando arquivos e pastas</h2>
+    <p>
+      Com o comando mv (move) podemos mover arquivos para uma pasta ou diretório
+      especifico. Funciona de forma similar ao cp aceitando vários imputs mas
+      não necessita do recursivo quando estamos tratando de pastas. Para
+      renomear colocamos o arquivo atual e depois o novo nome, ambos com a
+      extensão.
+    </p>
+
+    <h2>Removendo arquivos ou pastas</h2>
+    <p>
+      O comando rm (remove) deletará o arquivo sem nem enviar para a lixeira,
+      também aceita multiplos argumentos. Para diretórios com muitas coisas
+      dentros precisamos usar o recursivo (-r). Algumas vezes ele questiona se
+      realmente deseja remover o arquivo, colocando o -f (forçado) ele remove
+      independente de bloqueios.
+    </p>
+
+    <h2>Wildcards (coringas)</h2>
+    <p>
+      O * e o ? funcionam como coringas para 1 caracter (?) ou 1 ou mais
+      caracteres (*) para determinar os arquivos e pastas que serão
+      selecionadas.
+    </p>
+
+    <h2>Encontrar arquivos ou pastas com find</h2>
+    <p>
+      Podemos usar o comando find para encontrar arquivos coloando como
+      argumentos o path (caminho) e os argumentos (expressions). Se usarmos o
+      ponto (.) no lugar do path vamos executar o find no diretório atual.
+      Colocamos o parâmetro -type e indicamos d (directory) ou f (file) e o
+      -name (para procurar o nome, ex: *.txt). O find apresentará todos os
+      resultados compatíveis na árvore atual, incluindo subpastas.
+    </p>
+
+    <h2>Ver conteúdo de arquivos com cat e less</h2>
+    <p>
+      O comando less abre o arquivo e permite navegar por ele sem imprimi-lo no
+      terminal, já o cat apresenta o conteúdo em forma de texto no terminal e
+      navegamos por ele mesmo para verificarmos o conteúdo. Arquivos de foto,
+      música e vídeo são binários, então o comando pergunta se queremos mostrar
+      ou não pois apresentará somente os códigos binários.
+    </p>
+
+    <h2>Editando arquivos com nano e vim</h2>
+    <p>
+      O nano permite editar o arquivo no próprio terminal, após editar usamos os
+      comando sair e salvar. Podemos salvar com nomes diferentes criando uma
+      cópia alterada. Já o vim é mais personalisável e permite a instalação de
+      plugins, para iniciar a edição com o vim precisamos primeiro pressionar A
+      ou I (insert). Para escrever e sair usamos o comando :wq para sair sem
+      salvar usamos :q!. O vim é muito mais poderoso que o nano mas requer muito
+      mais estudo e aprofundamento.
+    </p>
+  </body>
+</html>
