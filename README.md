@@ -222,14 +222,44 @@ As principais propriedades e como usar o box model
 
 **16. Terminal**
 
-15.1 Abertura
+16.1 Abertura
 
 <p>Explicando o terminar e o command line.</p>
 
-15.2 Preparação e Dicas
+16.2 Preparação e Dicas
 
 <p>Preparando o terminal para as próximas aulas.</p>
 
-15.3 Arquivos e Diretórios
+16.3 Arquivos e Diretórios
 
 <p>Alguns comandos básicos do terminal.</p>
+
+**17. NodeJS**
+
+17.1 Conhecendo o node
+
+<p>Introdução sobre o node conceito e funcionamentos.</p>
+
+17.2 Configurando o ambiente
+
+<p>.</p>
+
+17.3 Iniciando na prática
+
+<p>.</p>
+
+17.4 NPM - Node Package Manager
+
+<p>.</p>
+
+17.5 BestMe App: Interagindo com o aplicativo
+
+<p>.</p>
+
+17.6 Timers
+
+<p>.</p>
+
+17.7 Events
+
+<p>.</p>
