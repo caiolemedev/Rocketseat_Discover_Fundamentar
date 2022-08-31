@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula03</title>
+  </head>
+  <body>
+    <h1>Iniciando na prática</h1>
+
+    <h2>Execurando o primeiro arquivo e entendendo globais</h2>
+    <p>
+      Usamos o terminal do próprio VS Code com o gitbash no windows para termos
+      as configurações necessárias. Cirando o primeiro arquivo para o JS para
+      ser executado no node e imprimindo o global (veriáveis globais).
+    </p>
+
+    <h2>O que são e como utilizar módulos?</h2>
+    <p>
+      O require chama os módulos do node, sejam eles nativos, instalados ou
+      criados. Usamos como exemplo o path que é um módulo nativo do node. Assim
+      podemos utilizar módulos externos em nossas aplicações do node.
+    </p>
+
+    <h2>Criando módulos</h2>
+    <p>
+      Para criarmos um módulo usamos a veriável global module.exports e
+      atribuímos um valor, objeto, número, string a ele. Este valor será enviado
+      quando executarmos a função require na aplicação principal. Exemplo usando
+      os arquivos require e exports.
+    </p>
+
+    <h2>Pegando informações do processo</h2>
+    <p>
+      Capturamos informações do processo usamos a variável global process, que é
+      um objeto com vários dados. O argv do process traz um array com os
+      processos que estão sendo executados, desde o node até os argumentos
+      colocados após a chamada do arquivo. Assim podemos capturar estes dados
+      como entrada e usarmos dentro da nossa aplicação.
+    </p>
+
+    <h2>Passando flags como argumentos</h2>
+    <p>
+      As flags são informações no formato --nome que recebe um valor que vem
+      logo na sequência, exemplo: --name "Caio Leme".
+    </p>
+
+    <h2>Apresentação do desafio</h2>
+    <p>
+      Desafio para pegar as flags via função externa e imprimir o nnome e a
+      saudação.
+    </p>
+
+    <h2>Resolução do desafio</h2>
+    <p>
+      Resolução do desafio usando uma função externa getFlag e outra principal
+      para o greeting. Isso traz dinamismo e flexiblidade para os programas
+      expandindo ainda mais a aplicação.
+    </p>
+
+    <h2>Finalizando o módulo</h2>
+    <p>Apresentação de diversas funcionalidades do node neste curso.</p>
+  </body>
+</html>

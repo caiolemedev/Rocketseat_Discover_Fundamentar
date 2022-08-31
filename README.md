@@ -242,11 +242,11 @@ As principais propriedades e como usar o box model
 
 17.2 Configurando o ambiente
 
-<p>.</p>
+<p>Configurando o node e o VS code para utilizarmos.</p>
 
 17.3 Iniciando na prática
 
-<p>.</p>
+<p>Alguns conceitos básicos do note e fazendo as primeiras funções e desafios.</p>
 
 17.4 NPM - Node Package Manager
 

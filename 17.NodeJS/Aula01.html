@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula01</title>
+  </head>
+  <body>
+    <h1>Conhecendo o node</h1>
+
+    <h2>Abertura</h2>
+    <p>Introdução sobre os tópicos do curso de node</p>
+
+    <h2>O que podemos fazer com o NodeJS?</h2>
+    <p>
+      O NodeJS permite o desenvolvimento back e front end com JS, microserviços
+      (aplicações completas), API (disponibilização de dados para o frontend),
+      scripts, automação e até machining learning. Mas não é recomendado para
+      grandes processamentos de CPU, exemplo: vídeos e fotos.
+    </p>
+
+    <h2>Vantagens</h2>
+    <p>
+      Muito rápido na execução e prototipagem, também tem uma excelente
+      escalabilidade, usado no desenvolvimento de aplicações de ponta, usa o JS
+      que é aplicado em vários lugares, Grade ecosistema e suporte. Temos casos
+      famosos de uso: Netflix, Paypall, etc.
+    </p>
+
+    <h2>O que é o NodeJS?</h2>
+    <p>
+      O nodeJS é um JS Runtime Enviroment, ou seja, é um mini sistema
+      operacional onde executa o JS internamente, mas consegue conversar com o
+      sistema operacional quando necessário. Ele não é um framework (facilitador
+      para a programação) ou uma linguagem de programação (não é, usa o próprio
+      JS).
+    </p>
+
+    <h2>V8</h2>
+    <p>
+      Interpretador de JS para a linguagem da máquina criado em C++ e baseado
+      nas ultimas features do JS, focado para o Chrome mas funciona no NodeJS.
+      No node não temos a DOM e console, mas temos o file system. Node é
+      composto pelo V8, Core Modules, C++ Bindings, libuv, c-ares, http, etc...
+    </p>
+
+    <h2>Como funciona?</h2>
+    <p>
+      Analogia dos restaurantes. Apache: 1 garçom pra cada cliente, ele fica
+      bloqueado na cozinha até o pedido ficar pronto e depois de atender o
+      cliente o garçom é despedido. Noderson: garçom Eveneto Lupin que trabalha
+      de maneira assincrona e pode fazer mais de 1 evento por vez, sendo muito
+      mais eficiente. Garçom = Thread, Pedido = Request, Chef = Banco de dados,
+      Eveneto Lupin = Event Loop. O Node é single thread, non-blocking,
+      asynchronous.
+    </p>
+
+    <h2>Avançando no entendimento e funcionamento</h2>
+    <p>
+      Criamos um aplicação em JS que se conversa com o V8 e o NodeJS, este se
+      comunica com a libuv onde é rodado o event loop. Eventos que podem
+      bloquear a aplicação são enviados para os worker threads (file system,
+      networking, etc...) para serem executados, depois de completados o event
+      loop recebem de volta o resultado via call back. O event loop é executado
+      constantemente fazendo o leva e traz das informações. No node podemos
+      registrar todas as funções e depois executar, como no JS e todo retorno
+      vazio enviará um undefined. Podemos exemplificar a assincronia adicionando
+      um setTimeout na aplicação que envia um retorno posterior, e mesmo com o
+      time zero ele sai e depois retorna para a fila, portanto fica no final
+      também.
+    </p>
+
+    <h2>De onde veio e para onde vai o NodeJS?</h2>
+    <p>
+      Foi criado em 2009 por Ryan Dahl e em 2011 foi liberado a NPM versão 1 que
+      é o compartilhamento de bibliotecas e revolucionou o compartilhamento de
+      códigos. Em 2015 foi criado o Node.js Foundation e passou a fazer parte da
+      openjs Foundation. Comunidade muito ativa!
+    </p>
+  </body>
+</html>
