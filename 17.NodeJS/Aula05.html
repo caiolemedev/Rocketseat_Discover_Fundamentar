@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula05</title>
+  </head>
+  <body>
+    <h1>BestMe App: Interagindo com o aplicativo</h1>
+
+    <h2>O que vamos aprender?</h2>
+    <p>
+      Criaremos um aplicativo para tirar a melhor versão de nós mesmos. Vamos
+      aprender a nos comunicar com o processo enquanto ele ainda estiver
+      rodando, além de assincronismo.
+    </p>
+
+    <h2>Apresentando as perguntas com process.stdout.write</h2>
+    <p>
+      Usando o process standout podemos imprimir strings na tela similar ao
+      processo de console.log mas com mais controle do que está acontecendo.
+      Criamos um array de perguntas e uma função para imprimir as perguntas na
+      tela.
+    </p>
+
+    <h2>Recebendo dados de entrada e assincronismo com process.stdin.on</h2>
+    <p>
+      Usando a função acima podemos ter dados de entrada e criamos uma
+      assincronia, mas a função permanece ligada aguardando uma entrada de dados
+      para ser executada. Para fecharmos o processo usamos o process.exit e
+      assim após o fluxo da função o processo é finalizado.
+    </p>
+
+    <h2>Lógica para apresentar perguntas e salvar as respostas</h2>
+    <p>
+      Para capturarmos as respostas criamos um array e usamos o método push para
+      incrementa-lo. Também inserimos um looping onde a função de perguntas é
+      executada enquanto o array de resposta for menor que o de perguntas e usa
+      como input da função ask o tamanho do array de respostas, assim podemos
+      incrementar o quanto for necessário. Antes de sair do programa inserimos
+      uma visualização das respostas.
+    </p>
+
+    <h2>Finalizando e revisando</h2>
+    <p>
+      O programa roda até encontrar o exit, mas podemos adicionar um evento
+      final que ouve o exit e exibe uma menssagem final do programa, nela
+      colocamos um texto com todas as reflexões e respostas do usuário.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula04</title>
+  </head>
+  <body>
+    <h1>NPM - Node Package Manager</h1>
+
+    <h2>NPM</h2>
+    <p>
+      O node package manager nos ajuda a instalar extensões (dependencies,
+      packages, modules, etc...) no nosso node para expandirmos as
+      funcionalidades e aplicações do nosso projeto.
+    </p>
+
+    <h2>Iniciando um pacote com npm</h2>
+    <p>
+      Usamos o comando npm init com ou sem o -y para iniciarmos um arquivo
+      package.json
+    </p>
+
+    <h2>package.json</h2>
+    <p>
+      É um arquivo com extensão javascript object notation, onde temos dentro
+      dele um objeto com algumas propriedades específicas. Principais
+      propriedades: nome, versão, descrição, main (arquivo principal de
+      inicialização), palavras chaves, autor e tipo de licença.
+    </p>
+
+    <h2>Instalando dependências</h2>
+    <p>
+      Usamos o comando npm install para instalar móddulos de terceiros no nosso
+      projeto npm. Ele automaticamente cria o diretório para os módulos e o
+      arquivo package-lock.json, também edita o arquivo package.json. Podemos
+      usar como abreviação o comando npm i + nome do módulo.
+    </p>
+
+    <h2>Dependencias de desenvolvimento e atualização</h2>
+    <p>
+      No arquivo package.json ele traz a lista das dependências que estamos
+      usando em nosso projeto. Podemos instalar os módulos como desenvolvimento
+      adicionando -D após o nome do módulo, isso significa que ela será
+      utilizada somente no desenvolvimento, não sendo instalada namáquina do
+      usuário final. Podemos também instalar mais de uma dependência em uma
+      única linha de comando. O arquivo package.json é editável e podemos
+      alterar as dependências diretamente nele, mas precisamos usar o comando de
+      atualização npm update para que a pasta de módulos e o arquivo
+      package-lock.json sejam atualizados corretamente.
+    </p>
+
+    <h2>O que é o diretório node_modules</h2>
+    <p>
+      É um diretório criado pelo npm ao instalar a primeira dependência, ele
+      traz um pacote de outras dependências que são utilizadas para rodar a
+      principal, gerando uma árvore de dependências que são armazenadas neste
+      diretório e acessadas pelo package.json de cada dependência. Esta pasta
+      não deve ser enviada ao github com o projeto, portanto criamos um arquivo
+      gitignore e adicionamos ela. Podemos fazer isso pois podemos reainstalar
+      rapidamente rodando o npm install com o arquivo package.json atualizado.
+    </p>
+
+    <h2>package-lock.json</h2>
+    <p>
+      Não fazemos a alteração deste arquivo! Ele mapeia todas as dependências do
+      projeto e não costumamos deletar pois quando o projeto está consolidado
+      ele ajuda a manter a organização e rapidez.
+    </p>
+
+    <h2>Criando e rodando scripts</h2>
+    <p>
+      Criando o primeiro arquivo para ser rodado via script, quando usamos o
+      comando start não precisamos inserir o comando run na frente, podemos
+      inicializar somente com npm start. Este é o único script que podemos fazer
+      isso.
+    </p>
+
+    <h2>Instalando dependências globais</h2>
+    <p>
+      Podemos instalar módulos de maneira global usando o comando npm install +
+      nome do módulo + -g, que indica global. Ele não criará a pasta
+      node_modules dentro do projeto, mas sim na pasta geral localizada com npm
+      root -g. Podemos desinstalar via uninstall.
+    </p>
+
+    <h2>Gerenciando versões das dependências</h2>
+    <p>
+      A versão é indicada por major.minor.patch. Patch = pequenos bugs sendo
+      revisados, Minor = alterações que não irão quebrar o projeto, Major =
+      alterações grandes que podem quebrar projetos. No arquivo package.json
+      podemos ter os módulos como ^ (atualiza somente patch e minors), ~
+      (atualiza somente patches), numero limpo (não será atualizado nunca) e *
+      (atualizará para a última versão sempre). Podemos ver quais pacotes estão
+      desatualizados via comando npm outdated, para atualizarmos usamos npm
+      upgrade que atualiza todos mas não sincroniza os arquivos .json. Para
+      atualizarmos para a versão mais nova usamos npm install moment@latest
+      (exemplo com moment mas podemos usar qualquer pacote).
+    </p>
+
+    <h2>Removendo pacotes</h2>
+    <p>
+      Usamos o comando npm uninstall + nome do pacote para remove-lo. O arquivo
+      package-lock e o diretório node_modules ainda permanecerão mas estarão sem
+      dados.
+    </p>
+  </body>
+</html>

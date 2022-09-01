@@ -250,16 +250,16 @@ As principais propriedades e como usar o box model
 
 17.4 NPM - Node Package Manager
 
-<p>.</p>
+<p>Como utilizar o NPM para gerenciar extensões e pacotes no node.</p>
 
 17.5 BestMe App: Interagindo com o aplicativo
 
-<p>.</p>
+<p>Criando um app usando process stand in, out e exit para nos comunicarmos com a aplicação e criarmos assincronias.</p>
 
 17.6 Timers
 
-<p>.</p>
+<p>Aprendendo o básico da aplicação de timers no node.</p>
 
 17.7 Events
 
-<p>.</p>
+<p>Introdução sobre a utilização dos eventos, fazendo emissão, identificação e ação, no node.</p>

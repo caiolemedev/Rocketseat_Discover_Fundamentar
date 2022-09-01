@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula06</title>
+  </head>
+  <body>
+    <h1>Timers</h1>
+
+    <h2>Introdução</h2>
+    <p>
+      Maneira de trabalhar com o tempo dentro do NodeJS, usaremos um total de 4
+      funções e praticar um pouco mais com callbacks e assincronismos.
+    </p>
+
+    <h2>setTimeout</h2>
+    <p>
+      Criamos uma função callback e passamos como referência para o setTimeout
+      com o valor do timeOut desejado, no caso do exemplo usamos 3s. Callback -
+      será chamada de volta depois do tempo determinado. Para exemplificar o
+      assincronismo inserimos um mostrar diretamente após o setTimeout então as
+      respostas ficam meio que fora de ordem, mas essa é a intenção.
+    </p>
+
+    <h2>clearTimeout</h2>
+    <p>
+      O setTimout criar um objeto que pode ser guardado em uma variável, no caso
+      o timer, e podemos cancelar o processo antes da sua execução se colocarmos
+      um clearTimeout logo após e enviarmos a variável timer. No exemplo nada
+      acontece, pois enquanto o programa aguardava a execução do processo (3s)
+      foi excecutada a função de limpeza.
+    </p>
+
+    <h2>setInterval</h2>
+    <p>
+      Usamos a função setInterval para registrar um função e um tempo de
+      intervalo em que a mesma será executada. No exemplo usamos somente um
+      console log para mostrar uma checkagem.
+    </p>
+
+    <h2>clearInterval</h2>
+    <p>
+      Podemos cancelar um interval de modo similar ao timeout, guardando seu
+      output em uma variável e limpando depois. Se utilizarmos um timeout para a
+      função de limpeza do interval podemos rodar a função do interval por um
+      número determinado de vezes ou durante um período desejado, mas devemos
+      lembrar que o timer de todas se iniciam ao mesmo tempo.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula07</title>
+  </head>
+  <body>
+    <h1>Events</h1>
+
+    <h2>Event Module</h2>
+    <p>
+      É um mecanismo para disparar eventos na aplicação, podemos também ouvir e
+      realizar alguma ação ao identificarmos este evento. É a base para muitos
+      outros módulos como: http, stream, file system, etc. Vamos aprender a
+      utilizar, disparar, ouvir, executar ações com eventos.
+    </p>
+
+    <h2>Event Emitter</h2>
+    <p>
+      Podemos criar eventos via EventEmitter e salvar seus outputs em uma
+      variável como no exemplo.
+    </p>
+
+    <h2>Emitindo eventos</h2>
+    <p>
+      Usamos a função emit na variável criada anteriormente para emitirmos um
+      evento. Mas precisamos ouvir o mesmo, se não isso não adianta de nada,
+      fica perdido no código.
+    </p>
+
+    <h2>Ouvindo e executando ações para os eventos</h2>
+    <p>
+      Usamos o on para ligar o ouvido da função e assim passamos a função (com
+      ou sem inputs) que será executada sempre que o evento for acionado. No
+      caso de inputs colocamos o mesmo logo após o nome do evento no emit e como
+      parâmetro da função dentro do listener (on). Podemos executar a função
+      quantas vezes desejarmos, basta somente emitir o evento com o nome
+      determinado pois foi estabelecido um link com este.
+    </p>
+
+    <h2>Ouvindo eventos uma única vez</h2>
+    <p>
+      Se quisermos um event listener que escute a função uma única vez usamos o
+      once no lugar do on, assim o primeiro evento será executado e os demais
+      não.
+    </p>
+
+    <h2>Herdando do EventEmitter</h2>
+    <p>
+      Usando a const inherits podemos passar as funções do EventEmitter como no
+      exemplo para um nova função que estamos criando em nossa aplicação. Assim,
+      podemos executar as propriedades como manipulação de eventos no próprio
+      objeto que estamos trabalhando.
+    </p>
+  </body>
+</html>
