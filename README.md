@@ -263,3 +263,9 @@ As principais propriedades e como usar o box model
 17.7 Events
 
 <p>Introdução sobre a utilização dos eventos, fazendo emissão, identificação e ação, no node.</p>
+
+**18. Node + EJS**
+
+18.1 Node + EJS
+
+<p>Criando um servidor local e rodando EJS para renderizarmos páginas HTML via JS.</p>

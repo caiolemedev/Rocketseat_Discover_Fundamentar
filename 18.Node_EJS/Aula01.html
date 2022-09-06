@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula01</title>
+  </head>
+  <body>
+    <h1>Node + EJS</h1>
+
+    <h2>Criando o HTML</h2>
+    <p>
+      Primeiro precisamos criar a página HTML básico para posteriormente passar
+      para EJS.
+    </p>
+
+    <h2>Criando o servidor</h2>
+    <p>
+      Instalamos as bibliotecas ejs e express para rodarmos um servidor local
+      usando ejs para renderizar as páginas HTML. Usamos as propriedades set e
+      get do express para configurarmos as páginas (detalhes no arquivod do
+      servidor). O servidor precisa estar ativo para a porta 8080 (escolhida
+      neste caso) funcionar. Precisamos inserir os arquivos das páginas dentro
+      de uma pasta padrão chamada views e aí sim o express vai encontrar o
+      arquivo ejs.
+    </p>
+
+    <h2>Separando partes do layout</h2>
+    <p>
+      Separamos o HTML original em vários pedaços para podermos utiliza-los em
+      diversas páginas diferentes. Depois incluímos novamente via tag ejs
+      seguida do comando include e o arquivo que desejamos incluir (detalhes no
+      arquivo index). Não há necessidade de para o servidor quando altermos
+      arquivos ejs, mas se alterarmos o js precisamos para e inciar novamente o
+      servidor.
+    </p>
+
+    <h2>Nova página e menu</h2>
+    <p>
+      Criamos a página about e ligamos os arquivos com pedaços similares. Além
+      disso, configuramos o menú e criamos os links para as duas páginas.
+    </p>
+
+    <h2>Views e partials - Organização</h2>
+    <p>
+      Separando os arquivos que são páginas e os são partes do layout. Com isso
+      precisamos atualizar o arquivo server com o novo caminho das páginas e as
+      páginas princiais com as chamadas das partes.
+    </p>
+
+    <h2>Passando um objeto para o ejs</h2>
+    <p>
+      Podemos incluir um objeto quando chamamos um componente ejs em uma
+      determinada página. Assim o servidor irá renderizar o objeto dentro do
+      componente, podendo ser alterado e exibido conforme cada página. Usando
+      este objeto ele passa a ser obrigatório para todas as chamadas (incude) do
+      componente. Podemos definir um padrão para o objeto dentro do componente
+      usando um comparador ternário.
+    </p>
+
+    <h2>Foreach</h2>
+    <p>
+      Adicionamos um looping forEach que é uma propriedade de objeto para
+      gerarmos um texto HTML via JS. É importante definir dentro do código EJS
+      quais partes são JS e inseri-las dentro das tags do EJS usando o
+      porcentagem. Para exibirmos o código JS usamos igual e para rodarmos o
+      código JS não colocamos nada após a abertura da tag. Assim usamos o array
+      de objetos que passamos como um ojeto para imprimir todo o texto da lista
+      DEMAIS.
+    </p>
+  </body>
+</html>
