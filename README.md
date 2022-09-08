@@ -269,3 +269,41 @@ As principais propriedades e como usar o box model
 18.1 Node + EJS
 
 <p>Criando um servidor local e rodando EJS para renderizarmos páginas HTML via JS.</p>
+
+**19. SQL**
+
+19.1 Introdução
+
+<p>Conceito de banco de dados e os principais prestadores deste serviço.</p>
+
+19.2 Conceitos
+
+<p>O que são tabelas, campos e informações do banco de dados.</p>
+
+19.3 Configurando o ambiente
+
+<p>Instalando e configurando o Beekeeper.</p>
+
+19.4 Tipos de campos
+
+<p>Entendendo os tipos de campos, primary key e restrições do banco de dados.</p>
+
+19.5 Comando SELECT
+
+<p>Como usar o comando SELECT com o FROM e o WHERE na Query.</p>
+
+19.6 Operadores Relacionais
+
+<p>Introdução sobre operadores relacionais para o WHERE dentro da Query.</p>
+
+19.7 Operadores Matemáticos
+
+<p>Adicionando operadores matemáticos para encontrar a referência do WHERE da Query.</p>
+
+19.8 Operadores Lógicos
+
+<p>.</p>
+
+19.9 Mais comandos
+
+<p>.</p>

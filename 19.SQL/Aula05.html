@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula05</title>
+  </head>
+  <body>
+    <h1>Comando SELECT</h1>
+
+    <h2>SELECT</h2>
+    <p>
+      Este comando tem como função buscar e apresentar informações. Usamos junto
+      com o FROM para indicar em qual tabela desejamos procurar as informações.
+      Os comandos no SQL são todos maiúsculos sempre. Se usarmos o asterísco o
+      comando trará todas as informações da tabela. Exemplo: SELECT * FROM
+      aluno.
+    </p>
+
+    <h2>SELECT especificando campos</h2>
+    <p>
+      No lugar do asterísco anteriormente o nome dos campos que queremos
+      apresentar separados por vírgula, os dados serão apresentados conforme
+      ordem que colocamos no comando. Exemplo: SELECT materia, cpf, nome FROM
+      professor.
+    </p>
+
+    <h2>SELECT com WHERE</h2>
+    <p>
+      Para selectionarmos linhas específicas colocamos a pós os primeiros
+      comandos o WHERE e indicamos a condição desejada. Exemplo: SELECT * FROM
+      aluno WHERE matricula = 1. Podemos usar o adicional like ao comando WHERE
+      para procurarmos nos textos algo que inicie com uma letra específica
+      colocando um porcentagem após a letra entre aspas simples. Exemplo: SELECT
+      * FROM aluno WHERE nome like 'j%'. Não precisamos mostrar o campo que
+      estamos usando no WHERE necessariamente.
+    </p>
+  </body>
+</html>
