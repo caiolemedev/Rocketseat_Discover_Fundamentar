@@ -302,8 +302,8 @@ As principais propriedades e como usar o box model
 
 19.8 Operadores Lógicos
 
-<p>.</p>
+<p>Podemos adicionar alguns operadores lógicos ao comando WHERE para termos um filtro melhor.</p>
 
 19.9 Mais comandos
 
-<p>.</p>
+<p>Podemos inserir (INSERT INTO), alterar (UPDATE) ou deletar (DELETE FROM) dados das tabelas usando 3 comandos adicionais muito importantes.</p>

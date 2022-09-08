@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula09</title>
+</head>
+<body>
+  <h1>Mais Comandos</h1>
+
+  <h2>INSERT INTO</h2>
+  <p>O comando acima permite que seja inserido dados na tabela. No caso do exemplo não preenchemos o campo matrícula pois ele é auto preenchido com um numero que ainda não existe. Usamos o comando como no exemplo: INSERT INTO aluno (nome, cpf, responsavel) VALUES ('Caio Leme', 1234, 'Augusto Leme'). Os textos precisam estar entre aspas simples e no formato dos campos corretos.</p>
+
+  <h2>UPDATE</h2>
+  <p>O comando acima permite alterar algum dado na tabela. O comando é usado como no exemplo: UPDATE aluno SET nome = 'Mariano Soares', responsavel = 'Caio Leme' WHERE matricula = 2. Colocamos primeiro os campos que desejamos alterar e os valores e depois usamos o comando WHERE para selecionar qual linha será alterada, se não indicarmos via WHERE ele fará alteração na coluna toda. Assim como o INSERT INTO o UPDATE não retorna dados, não é uma query, apenas atualiza a tabela.</p>
+
+  <h2>DELETE</h2>
+  <p>O comando acima permite excluir ou apagar um registro do banco de dados. Usamos o comando como no exemplo: DELETE FROM aluno WHERE matricula = 4. Precisamos necessariamente passar o comando WHERE caso não teremos problemas e será deletada a tabela como um todo. Existem bloqueios que podem ser feitos para evitar o DELETE sem o acesso correto.</p>
+</body>
+</html>
