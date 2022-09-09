@@ -307,3 +307,9 @@ As principais propriedades e como usar o box model
 19.9 Mais comandos
 
 <p>Podemos inserir (INSERT INTO), alterar (UPDATE) ou deletar (DELETE FROM) dados das tabelas usando 3 comandos adicionais muito importantes.</p>
+
+**20. Estrutura de Dados**
+
+20.1 Estrutura de Dados
+
+<p>Conceitos básicos de estrutura de dados usando JS.</p>
