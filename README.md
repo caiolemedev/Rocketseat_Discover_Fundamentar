@@ -313,3 +313,9 @@ As principais propriedades e como usar o box model
 20.1 Estrutura de Dados
 
 <p>Conceitos básicos de estrutura de dados usando JS.</p>
+
+**21. Programação Orientada a Objetos**
+
+21.1 Programação Orientada a Objetos
+
+<p>Introdução e primeiros passos sobre POO criando alguns objetos através das classes e entendendo seus princípios.</p>

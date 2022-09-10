@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula01</title>
+  </head>
+  <body>
+    <h1>Programação Orientada a Objetos</h1>
+
+    <h2>Introdução</h2>
+    <p>
+      Oriented Object Programing, é um paradigma de desenvolvimento, ou seja,
+      ajuda a iniciar a elaborar a solução dos problemas que precisamos resolver
+      com a programação. É um conceito atemporal e permeia todas as linguagens
+      de programação.
+    </p>
+
+    <h2>Qual o uso da POO no mercado de trabalho?</h2>
+    <p>
+      Usada na maioria dos sistemas atuais, várias linguagens usam esse
+      paradigma (JS, TS, Java, Python, etc...). Também é utilizada por Analistas
+      de Sistemas e não somente por programadores, na fase de levantamentos de
+      requisitos do sistema e expressado via gráficos, desenhos e textos.
+    </p>
+
+    <h2>Onde e quando vou utilizar?</h2>
+    <p>
+      Depende da linguagem, se possuir o conceito POO podemos usa-lo. Ao
+      utilizar Padrões de Projetos e para melhorar a organização do código,
+      quando reutilizará o código, separar a complexidade do código com
+      abstrações, classificação de rotinas.
+    </p>
+
+    <h2>Conceitos</h2>
+    <p>
+      Base de comunicação no mercado de trabalho, ter uma boa fundamentação.
+    </p>
+
+    <h2>Objetos</h2>
+    <p>
+      Temos muitos objetos, qualquer coisa pode ser um objeto. Na programação é
+      importante entender que cada objeto tem propriedades ou atributos,
+      funcionalidades (sempre no infinitivo), estado (como o objeto está),
+      comportamentos (como o objeto reagirá em alguma situação), atributos e
+      métodos.
+    </p>
+
+    <h2>Abstratos vs Mundo Real</h2>
+    <p>
+      É simples representar algo do mundo real para objetos, exemplo: pessoa,
+      aluno, produto, carrinho de compras, etc. Já objetos não físicos ou que
+      não exitem na realidade são chamados abstratos, alguns exemplos são:
+      autenticação (login) e autorização (quais acessos ou possibilidades o
+      usuário tem dentro do sistema). Nem todo objeto do mundo real fará parte
+      do sistema.
+    </p>
+
+    <h2>Classes</h2>
+    <p>
+      Classes funcionam como um molde para a criação dos objetos, ou seja,
+      objetos são criados a partir de classes e podemos ter vários da mesma
+      classe. O objeto em si pode ser chamado também de instância.
+    </p>
+
+    <h2>Classes no JS</h2>
+    <p>
+      No JS calsses são diferentes que em uma programação completamente
+      orientada a objetos, mas ela é multi paradigma também. No JS a classe é
+      uma Syntactical sugar (maneira mais bonita para se escrever protótipos) e
+      é um Prototype. Ao criarmos um objeto via classe em JS teremos muito mais
+      funcionalidades do que as propriedades que criamos, já no Java por exemplo
+      o objeto terá somente as propriedades que criamos, ou seja, um objeto puro
+      (podemos inserir a herança). No JS isso ocorre pois existe já uma herança
+      prototipal em que o objeto herda um conjunto de funcionalidades de um
+      objeto pai protótipo e irá depender do tipo da propriedade (string,
+      numero, etc.).
+    </p>
+
+    <h2>Encapsulamento</h2>
+    <p>
+      Este conceito é referente ao agrupamento de funções e veriáveis onde
+      escondemos detalhes de implementação das funcionalidades, funciona como
+      uma camada de segurança adicional para os atributos e métodos.
+    </p>
+
+    <h2>Encapsulamento no código JS</h2>
+    <p>
+      Realizando o encapsulamento das informações podemos tronar algumas
+      funcionalidades escondidas do usuário via o conceito de hash(#), como no
+      exemplo encap01 fizemos para o método de calcularArea.
+    </p>
+
+    <h2>Programação Estruturadas vs Orientada a Objetos</h2>
+    <p>
+      Estruturada: maneira linear desde a entrada, processamento até a saída dos
+      dados, uso de sequências, condições e estuturas de repetição estão todos
+      na mesma página, uso de rotina maior com sub-rotinas (pequenas funções),
+      por estar tudo na mesma página não existem restrições às variáveis.
+      Orientada: surge um cuidado com o uso estruturado, usando conceito de
+      classes e objetos, guardar as variáveis em capsulas para não serem usadas
+      pela aplicação inteira, assim como as rotinas e funções, e melhor uso de
+      código através da Herança.
+    </p>
+
+    <h2>Herança</h2>
+    <p>
+      Objetos podem herdar ou estender características básicas de outros
+      objetos. É uma cópia de atributos de outra classe para a nova classe.
+      Exemplo de veículo e moto no arquivo heranca01. Qualquer objeto herdará as
+      propriedades de protótipo, por exemplo string que podemos usar funções de
+      colocar todas as letras em caixa alta.
+    </p>
+
+    <h2>Polimorfismo</h2>
+    <p>
+      Quando o objeto estende de outro talvez exista a necessidade de reescrever
+      algum atributo ou método da classe herdada. Isso é o conceito do
+      polimorfismo, onde podemos alterar mesmo as características herdadas.
+    </p>
+
+    <h2>Polimorfismo no JS</h2>
+    <p>
+      Usando alteração de uma característica herdada de um objeto pai no JS.
+      Exemplo no arquivo polimorf01, no exemplo a definição de categoria não
+      estava funcionando.
+    </p>
+
+    <h2>Abstração</h2>
+    <p>
+      Template ou identidade de uma classe que será construída no futuro. Inicia
+      o processo e depois moldamos o restante, via herança, definindo as
+      especificidades para as classes filhas.
+    </p>
+
+    <h2>Abstração no JS</h2>
+    <p>
+      Usando JS apra aplicar as abstrações. Criamos uma classe principal de
+      depois implementamos os métodos individualmente. Usamos um verificador no
+      constructor da abstração para nos certificarmos que ela não está sendo
+      usada. No exemplo, precisamos rever o comando throw new Error para
+      encerrar a aplicação quando tentarmos criar um objeto via abstração e não
+      subclasse.
+    </p>
+
+    <h2>Conclusão</h2>
+    <p>
+      Programação Orientada a Objetos é um paradigma, uma maneira de solucionar
+      os problemas via a construção de objetos usando classes. Temos alguns
+      princípios como: encapsulamento, polimorfismo, herança e abstração.
+    </p>
+  </body>
+</html>
