@@ -319,3 +319,9 @@ As principais propriedades e como usar o box model
 21.1 Programação Orientada a Objetos
 
 <p>Introdução e primeiros passos sobre POO criando alguns objetos através das classes e entendendo seus princípios.</p>
+
+**22. Programação Funcional**
+
+21.1 Programação Funcional
+
+<p>Entendendo o conceito e os tipos de funções na Programação Funcional.</p>
