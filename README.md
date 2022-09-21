@@ -322,6 +322,36 @@ As principais propriedades e como usar o box model
 
 **22. Programação Funcional**
 
-21.1 Programação Funcional
+22.1 Programação Funcional
 
 <p>Entendendo o conceito e os tipos de funções na Programação Funcional.</p>
+
+**23. Guia Estelar de GIT**
+
+23.1 Introdução
+
+<p>.</p>
+
+23.2 O que é Git
+
+<p>.</p>
+
+23.3 Instalando Git
+
+<p>.</p>
+
+23.4 Começando
+
+<p>.</p>
+
+23.5 Conceitos
+
+<p>.</p>
+
+23.6 Alterando arquivos
+
+<p>.</p>
+
+23.7 Desfazendo mudanças
+
+<p>.</p>
