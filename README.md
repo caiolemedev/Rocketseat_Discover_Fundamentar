@@ -359,3 +359,25 @@ As principais propriedades e como usar o box model
 23.8 Usando Git em um projeto real
 
 <p>Usando um projeto da NLW para exemplificar um projeto real.</p>
+
+**24. Guia Estelar de Github**
+
+24.1 Introdução
+
+<p>Um pouco sobre o curso e revisão rápida.</p>
+
+24.2 Primeiros passos
+
+<p>Criando conta e configurando as primeiras páginas.</p>
+
+24.3 Criando repositórios
+
+<p>Criando o primeiro repositório com a descrição do peril.</p>
+
+24.4 Trabalhando com repositórios
+
+<p>.</p>
+
+24.5 Outras features
+
+<p>.</p>
