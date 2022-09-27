@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula07</title>
+  </head>
+  <body>
+    <h1>Desfazendo mudanças</h1>
+
+    <h2>Desfazendo modificações</h2>
+    <p>
+      Usamos o git restore NomeDoArquivo caso esteja no working directoty para
+      voltar ao estado anterior, antes do commit.
+    </p>
+
+    <h2>Trazendo de volta do staged</h2>
+    <p>
+      Para retirarmos algo do staged usamos git restore --staged NomeDoArquivo e
+      o arquivo irá voltar para o working directory. Podemos usar git restore
+      --staged . para retornar todos os arquivos. Depois usamos o comando acima
+      para remover as modificações.
+    </p>
+
+    <h2>Corrigindo o último commit</h2>
+    <p>
+      Usamos git commit --amend -m "Nova Menssagem" para alterar a menssagem do
+      último commit e alterar os arquivos da stage area. Se colocarmos só git
+      commit --amend modificamos o ultimo commit com tudo que está na stage area
+      mas mantemos a menssagem.
+    </p>
+
+    <h2>Recuperando arquivos</h2>
+    <p>
+      O ideal não é alterar os commits em si, mas sim criar novos pontos na
+      hitória. Então em vez de usarmos o amend para modificar, usamos o git log
+      para recuperar o SHA-1 de um commit anterior e depois usamos git checkout
+      -- NomeDoArquivo para trazer o arquivo para o working directory. Depois
+      pegamos o que nos interessa e adicionamos no arquivo desejado e podemos
+      excluir o arquivo novamente ou deixa-lo para ser salvo.
+    </p>
+
+    <h2>Removendo arquivos não ratreados</h2>
+    <p>
+      Quando temos arquivos não rastreados podemos usar o git clean -n para
+      verificar quais serão excluídos e depois usamos git clean -f para remover
+      completamente o arquivo. Não há possibilidade de recuperação.
+    </p>
+
+    <h2>Revertendo um commit</h2>
+    <p>
+      Com o git status verificarmos que tudo está limpo no working directory e
+      no stage area, usamos o comando git revert HEAD~5 para voltar 5 commits.
+      Ele na verdade cria um novo commit já com a sugestão de menssagem.
+    </p>
+  </body>
+</html>

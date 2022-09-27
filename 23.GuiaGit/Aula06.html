@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula06</title>
+  </head>
+  <body>
+    <h1>Alterando arquivos</h1>
+
+    <h2>Adicionando arquivos com git add</h2>
+    <p>
+      Revisão geral sobre git. Usamos git add NomeDoArquivo ou git add . , na
+      primeira forma adicionamos arquivos individualmente e no segundo caso
+      adicionamos todos os arquivos modificados de uma única vez. Podemos
+      adicionar por extensão usando git add *.md ou *.html, etc.
+    </p>
+
+    <h2>Editando arquivos</h2>
+    <p>
+      Usamos o vim para modificarmos os arquivos e com git status podemos ver
+      todas as modificações feitas. Adicionamos a stage area com git add e
+      depois comitamos normalmente, o próprio git modificará os arquivos e
+      controla-rá as versões do projeto.
+    </p>
+
+    <h2>Moficações com git diff</h2>
+    <p>
+      O comando git diff mostra todas as alterações de todos os arquivos, os --
+      indicam deleção de linha e arquivos, e o ++ significam que linhas e
+      arquivos foram adicionados. Ele mostra também arquivos não ratreados, mas
+      não consegue mostrar o comparativo.
+    </p>
+
+    <h2>Git diff staged</h2>
+    <p>
+      Pomdemos comparar os arquivos de duas maneiras. Via git diff - verificar
+      working directory vs repository ou com git diff staged - compara staged
+      com repository.
+    </p>
+
+    <h2>Deletando arquivos</h2>
+    <p>
+      Podemos deletar manualmente e depois inserir a remoção no stage area ou
+      via git rm NomeDoArquivo diretamente. Após organizarmos a stage area
+      podemos fazer o commit.
+    </p>
+
+    <h2>Renomeando arquivos</h2>
+    <p>
+      Podemos renomear na mão e depois adicionar ao stage area ou modificar o
+      nome diretamente via git mv NomeAtual NomeNovo. Depois fazemos o commit.
+    </p>
+
+    <h2>Movendo arquivos</h2>
+    <p>
+      POdemos mover os arquivos manualmente ou via git mv NomeDoArquivo
+      NomeDaPasta/NomeDoArquivo.
+    </p>
+  </body>
+</html>

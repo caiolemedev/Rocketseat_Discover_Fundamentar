@@ -330,28 +330,32 @@ As principais propriedades e como usar o box model
 
 23.1 Introdução
 
-<p>.</p>
+<p>O que vamos aprender.</p>
 
 23.2 O que é Git
 
-<p>.</p>
+<p>Conceito de git e versões.</p>
 
 23.3 Instalando Git
 
-<p>.</p>
+<p>Preparando o ambiente.</p>
 
 23.4 Começando
 
-<p>.</p>
+<p>Primeiros passos com versões.</p>
 
 23.5 Conceitos
 
-<p>.</p>
+<p>O que é stage, commit, working directory.</p>
 
 23.6 Alterando arquivos
 
-<p>.</p>
+<p>Usando os comando na prática para alterar, mover, criar arquivos e salvar.</p>
 
 23.7 Desfazendo mudanças
 
-<p>.</p>
+<p>Comandos de git para gerenciar e desfazer mudanças.</p>
+
+23.8 Usando Git em um projeto real
+
+<p>Usando um projeto da NLW para exemplificar um projeto real.</p>

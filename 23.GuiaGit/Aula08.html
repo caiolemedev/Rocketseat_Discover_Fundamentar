@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula08</title>
+  </head>
+  <body>
+    <h1>Usando Git em um projeto real</h1>
+
+    <h2>Iniciando um novo projeto</h2>
+    <p>
+      Baixar o arquivo da NLW e criar uma cópia no pc local. Usar o git initi
+      para fazer com que ele se torne um repositório. Não podemos usar git init
+      em pastas dentro de repositórios "pai", ele não criará um repositório
+      interno.
+    </p>
+
+    <h2>Adicionando e verificando modificações</h2>
+    <p>
+      Alteramos o arquivo desejado usando o VS code, usamos o git diff para
+      verificar qual linha foi alterada.
+    </p>
+
+    <h2>Staging e commits com atalho</h2>
+    <p>
+      Quando já temos o rastreamento dos arquivos modificados e não temos
+      arquivos novos podemos pular a etapa do add e partir diretamente para o
+      git commit -a ou -am "com menssagem".
+    </p>
+
+    <h2>Ver modificações em diversos pontos da história</h2>
+    <p>
+      Quando não temos modificações no working directory e no stage area não
+      conseguimos usar o git diff para isso. No caso comparamos via git show
+      IniciaisDoCommitAqui o git mostra todas as modificações feitas naquele
+      commit. Podemos selecionar uma pasta ou um arquivo específico para vermos
+      as modificações via git show IdDoCommit -- pasta/subpasta/NomeDoArquivo.
+    </p>
+
+    <h2>Ignorando arquivos e diretórios indesejados</h2>
+    <p>
+      Dentro do arquivo .gitignore podemos verificar quais arquivos estão sendo
+      ignorados no repositório. Para pastas colocamos NomeDaPasta/ e para
+      arquivos colocamos o NomeDoAquivo.
+    </p>
+  </body>
+</html>
