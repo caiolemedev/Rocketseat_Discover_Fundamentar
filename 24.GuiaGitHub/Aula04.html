@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula04</title>
+  </head>
+  <body>
+    <h1>Trabalhando com repositórios</h1>
+
+    <h2>Criando chave SSH</h2>
+    <p>
+      Precisamos fazer esse mesmo processo em todas as máquinas que queremos
+      ligar com o repositório do GitHub.Colocar no terminal: ssh-keygen -t rsa
+      -b 4096 emaildogithub@email.com, seguimos dando enter até o terminal
+      apresentar a chave, para o windows usamos o terminal do git. Para pegar a
+      chave usamos a o comando: cd ~/.ssh/id_rsa e depois um cat
+      ~/.ssh/id_rsa.pub e copiar o conteúdo. Após isso no GitHub inserimos a
+      chave e colocamos uma descrição do computador.
+    </p>
+
+    <h2>Adicionando chaves ao gerenciador local SSH Agent</h2>
+    <p>
+      Precisamos executar uma etapa adicional para funcionar certo as chaves SSH
+      do GitHub com o pc.
+    </p>
+
+    <h2>Linkando um repositório remoto com local</h2>
+    <p>
+      Criar um repositório online no próprio GitHub ou via linha de comando (no
+      GitHub tem um manual de como fazer). Via command line usar a chave SSH
+      para ligar os dois repositórios, em vez de HTTPS. Dúvidas acessar o GitHub
+      do maykbrito/demo. Para criar branch usamos o upstream.
+    </p>
+
+    <h2>Modificando arquivos local e enviando para repositório remoto</h2>
+    <p>
+      Após alterarmos o arquivo, seguimos a sequência git add e git commit para
+      adicionarmos ao repositório local. Como já foi configurado anteriormente,
+      com o git push atualizamos os dois repositórios (local e remoto) de uma
+      única vez.
+    </p>
+
+    <h2>Modificando arquivos remotos e puxando para o repositório local</h2>
+    <p>
+      Editamos o arquivo e clicamos em commit change. O repositório local fica
+      desatualizado, para isso usamos git pull e o git atualizará o repositório
+      local.
+    </p>
+
+    <h2>Entendendo o histórico remoto</h2>
+    <p>
+      Podemos entrar nos commits do projeto e verificar todas as modificações
+      linha a linha ou verificar o código no momento do commit.
+    </p>
+
+    <h2>Corrigindo conflitos de merge</h2>
+    <p>
+      Quando temos conflito de código (editamos local e remoto em overlap)
+      precisamos resolver os conflitos no código via merge para que o git e o
+      GitHub possam atualizar todos os repositórios corretamente. Abrimos o
+      repositório no VS code e podemos aceitar ou rejeitar fácilmente.
+    </p>
+  </body>
+</html>

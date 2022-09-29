@@ -376,8 +376,8 @@ As principais propriedades e como usar o box model
 
 24.4 Trabalhando com repositórios
 
-<p>.</p>
+<p>Usando o GitHub e o git para manipular os repositórios.</p>
 
 24.5 Outras features
 
-<p>.</p>
+<p>Ferramentas de pesquisa, favoritos e clonagem de repositórios.</p>
