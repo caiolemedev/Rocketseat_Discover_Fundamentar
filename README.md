@@ -381,3 +381,33 @@ As principais propriedades e como usar o box model
 24.5 Outras features
 
 <p>Ferramentas de pesquisa, favoritos e clonagem de repositórios.</p>
+
+**25. Guia Estelar de HTTP**
+
+25.1 Entendendo
+
+<p>Introdução sobre o HTTP, o que é e como funciona.</p>
+
+25.2 Conceitos
+
+<p>Conceitos básicos, cliente, servidor e proxies.</p>
+
+25.3 URI
+
+<p>O que é um identificador, seus tipos e características.</p>
+
+25.4 Messages
+
+<p>Estrutura e dados das menssagens de request e response.</p>
+
+25.5 Methods
+
+<p>.</p>
+
+25.6 Headers
+
+<p>.</p>
+
+25.7 Status
+
+<p>.</p>

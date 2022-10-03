@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula01</title>
+  </head>
+  <body>
+    <h1>Entendendo</h1>
+
+    <h2>Abertura</h2>
+    <p>HTTP - fluxo de menssagem em usuário e servidor.</p>
+
+    <h2>Visão Geral</h2>
+    <p>
+      HTTP - HyperText Transfer Protocol, um hypertexto pode conter audios,
+      links, videos. O HTTP permite a troca de dados e informações na internet e
+      abre uma chamada para cada um dos recursos.
+    </p>
+
+    <h2>Visualizando a comunicação</h2>
+    <p>
+      É basicamente uma troca de menssagens entre Browser e Server enviando e
+      recebendo e menssagens. No pedido, temos os methods (define a ação e o
+      tipo do pedido, GET ou POST), os headers e o body (similar aos de
+      response). Na resposta temos o Status Code (tipo de resposta, 404, 201,
+      500, etc.), o headers (campos propriedade-valor, ex: URL, user agent,
+      etc.) e o body (conteúdo da menssagem, ex: HTML, JSON, etc.).
+    </p>
+
+    <h2>Visualizando com DevTools</h2>
+    <p>
+      Usando o DevTools e acessando a aba network podemos visualizar todos os
+      requests e responses das páginas que estamos acessando. Podemos visualizar
+      todos os textos e todos os sub-pedidos.
+    </p>
+
+    <h2>Visualizando com cURL</h2>
+    <p>
+      Ferramenta já está instalada nos sistemas unix (Linux e Mac), no Windows
+      podemos usar o gitbash. Usamos essas ferramentas pois para protocólos
+      seguros como o HTTPS não conseguimos ver todos os detalhes nas ferramentas
+      de desenvolvedor. Podemos usar o -i e -v antes do site para recebermos
+      mais detalhes da menssagem.
+    </p>
+  </body>
+</html>
