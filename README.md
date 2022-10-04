@@ -402,12 +402,12 @@ As principais propriedades e como usar o box model
 
 25.5 Methods
 
-<p>.</p>
+<p>Explicando o que são métodos e um overview sobre cada um deles.</p>
 
 25.6 Headers
 
-<p>.</p>
+<p>Os três tipos de headers e os mais utilizados.</p>
 
 25.7 Status
 
-<p>.</p>
+<p>Uma breve explicação sobre os status mais comuns.</p>

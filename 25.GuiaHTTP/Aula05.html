@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula05</title>
+  </head>
+  <body>
+    <h1>Methods</h1>
+
+    <h2>Introdução</h2>
+    <p>São verbos do HTTP que determina o que vamos fazer.</p>
+
+    <h2>Methods</h2>
+    <p>
+      Define um conjunto de métodos, verbos HTTP, cada um possui sua própria
+      semântica (significado). Podem ser seguros: não alteram o servidos,
+      somente leitura, cliente não solicita alterações, não há carga extra no
+      servidor e o servidor é responsável por manter o método seguro. Ou podem
+      ser idepotente: ao executar o método a resposta deverá ser sempre a mesma,
+      status code pode ser diferentes, o servidor tem responsabilidade de
+      retornar dados da mesma maneira, não é garantia que todos servidores irão
+      aplicar o método corretamente.
+    </p>
+
+    <h2>JSON Server</h2>
+    <p>
+      Instalando o servidor JSON no pc, não funcionou por falta de autorização.
+    </p>
+
+    <h2>OPTIONS</h2>
+    <p>
+      Mostra os métodos disponíveis para usarmos na requisição. É seguro e
+      idepotente. Não é usado em formulários e não guarda informações em memória
+      (casheable).
+    </p>
+
+    <h2>GET</h2>
+    <p>
+      Método utilizado para pegar um recurso, somente recebe dados. É seguro e
+      idempotente, não deve enviar body no request mas recebemos um body na
+      response, é casheable e é usado em formulários HTML.
+    </p>
+
+    <h2>HEAD</h2>
+    <p>
+      Semelhante ao GET mas retorna somente o cabeçalho, tem as mesmas
+      características que o GET, mas não é usado em formulários. Podemos ver
+      algumas informações gerais da resposta.
+    </p>
+
+    <h2>POST</h2>
+    <p>
+      Usado para publicar ou cadastrar um recurso no servidor. Não é seguro e
+      não é idempotente. O body existe no request com as informações do post, a
+      response pode ou não ter body. Usado em formulários, pincipalmente com
+      dados sensíveis, e pode ser casheable dependendo das informações que
+      estamos enviando.
+    </p>
+
+    <h2>PUT</h2>
+    <p>
+      Usado para criar um novo ou atualizar um recurso, não é seguro. Ele não
+      altera a resposta, então é idempotente, normalmente usado para
+      atualização. Existe body somente no request, não é usado em formulários
+      HTML e não é casheable.
+    </p>
+
+    <h2>PATCH</h2>
+    <p>
+      Serve para fazer uma modificação parcial no recurso, o PUT é completo. Não
+      é seguro, não é idempotente, tanto request como response tem body, não é
+      usado em formulários HTML e também não fazemos cache dele.
+    </p>
+
+    <h2>DELETE</h2>
+    <p>
+      Usado para remover um recurso. Responde um status code 202, 204 ou 200.
+      Não é seguro, idempotente e podemos ter corpo no request e no response,
+      não usamos em formulários e não fazemos cache.
+    </p>
+  </body>
+</html>
